@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EA52859AA6700834874 /* vChatApp.swift */; };
+		C19F4EA82859AA6700834874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EA72859AA6700834874 /* ContentView.swift */; };
+		C19F4EAA2859AA6900834874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F4EA92859AA6900834874 /* Assets.xcassets */; };
+		C19F4EAD2859AA6900834874 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F4EAC2859AA6900834874 /* Preview Assets.xcassets */; };
+		C19F4EB72859AA6900834874 /* vChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EB62859AA6900834874 /* vChatTests.swift */; };
+		C19F4EC12859AA6900834874 /* vChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EC02859AA6900834874 /* vChatUITests.swift */; };
+		C19F4EC32859AA6900834874 /* vChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C19F4EB32859AA6900834874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19F4E9A2859AA6700834874 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19F4EA12859AA6700834874;
+			remoteInfo = vChat;
+		};
+		C19F4EBD2859AA6900834874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19F4E9A2859AA6700834874 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19F4EA12859AA6700834874;
+			remoteInfo = vChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C19F4EA22859AA6700834874 /* vChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F4EA52859AA6700834874 /* vChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatApp.swift; sourceTree = "<group>"; };
+		C19F4EA72859AA6700834874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C19F4EA92859AA6900834874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C19F4EAC2859AA6900834874 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C19F4EB22859AA6900834874 /* vChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F4EB62859AA6900834874 /* vChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatTests.swift; sourceTree = "<group>"; };
+		C19F4EBC2859AA6900834874 /* vChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F4EC02859AA6900834874 /* vChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatUITests.swift; sourceTree = "<group>"; };
+		C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C19F4E9F2859AA6700834874 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F4EAF2859AA6900834874 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F4EB92859AA6900834874 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C19F4E992859AA6700834874 = {
+			isa = PBXGroup;
+			children = (
+				C19F4EA42859AA6700834874 /* vChat */,
+				C19F4EB52859AA6900834874 /* vChatTests */,
+				C19F4EBF2859AA6900834874 /* vChatUITests */,
+				C19F4EA32859AA6700834874 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C19F4EA32859AA6700834874 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C19F4EA22859AA6700834874 /* vChat.app */,
+				C19F4EB22859AA6900834874 /* vChatTests.xctest */,
+				C19F4EBC2859AA6900834874 /* vChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C19F4EA42859AA6700834874 /* vChat */ = {
+			isa = PBXGroup;
+			children = (
+				C19F4EA52859AA6700834874 /* vChatApp.swift */,
+				C19F4EA72859AA6700834874 /* ContentView.swift */,
+				C19F4EA92859AA6900834874 /* Assets.xcassets */,
+				C19F4EAB2859AA6900834874 /* Preview Content */,
+			);
+			path = vChat;
+			sourceTree = "<group>";
+		};
+		C19F4EAB2859AA6900834874 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C19F4EAC2859AA6900834874 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C19F4EB52859AA6900834874 /* vChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				C19F4EB62859AA6900834874 /* vChatTests.swift */,
+			);
+			path = vChatTests;
+			sourceTree = "<group>";
+		};
+		C19F4EBF2859AA6900834874 /* vChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C19F4EC02859AA6900834874 /* vChatUITests.swift */,
+				C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */,
+			);
+			path = vChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C19F4EA12859AA6700834874 /* vChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19F4EC62859AA6900834874 /* Build configuration list for PBXNativeTarget "vChat" */;
+			buildPhases = (
+				C19F4E9E2859AA6700834874 /* Sources */,
+				C19F4E9F2859AA6700834874 /* Frameworks */,
+				C19F4EA02859AA6700834874 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vChat;
+			productName = vChat;
+			productReference = C19F4EA22859AA6700834874 /* vChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C19F4EB12859AA6900834874 /* vChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19F4EC92859AA6900834874 /* Build configuration list for PBXNativeTarget "vChatTests" */;
+			buildPhases = (
+				C19F4EAE2859AA6900834874 /* Sources */,
+				C19F4EAF2859AA6900834874 /* Frameworks */,
+				C19F4EB02859AA6900834874 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19F4EB42859AA6900834874 /* PBXTargetDependency */,
+			);
+			name = vChatTests;
+			productName = vChatTests;
+			productReference = C19F4EB22859AA6900834874 /* vChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C19F4EBB2859AA6900834874 /* vChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19F4ECC2859AA6900834874 /* Build configuration list for PBXNativeTarget "vChatUITests" */;
+			buildPhases = (
+				C19F4EB82859AA6900834874 /* Sources */,
+				C19F4EB92859AA6900834874 /* Frameworks */,
+				C19F4EBA2859AA6900834874 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19F4EBE2859AA6900834874 /* PBXTargetDependency */,
+			);
+			name = vChatUITests;
+			productName = vChatUITests;
+			productReference = C19F4EBC2859AA6900834874 /* vChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C19F4E9A2859AA6700834874 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C19F4EA12859AA6700834874 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C19F4EB12859AA6900834874 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C19F4EA12859AA6700834874;
+					};
+					C19F4EBB2859AA6900834874 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = C19F4EA12859AA6700834874;
+					};
+				};
+			};
+			buildConfigurationList = C19F4E9D2859AA6700834874 /* Build configuration list for PBXProject "vChat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C19F4E992859AA6700834874;
+			productRefGroup = C19F4EA32859AA6700834874 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C19F4EA12859AA6700834874 /* vChat */,
+				C19F4EB12859AA6900834874 /* vChatTests */,
+				C19F4EBB2859AA6900834874 /* vChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C19F4EA02859AA6700834874 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F4EAD2859AA6900834874 /* Preview Assets.xcassets in Resources */,
+				C19F4EAA2859AA6900834874 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F4EB02859AA6900834874 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F4EBA2859AA6900834874 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C19F4E9E2859AA6700834874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F4EA82859AA6700834874 /* ContentView.swift in Sources */,
+				C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F4EAE2859AA6900834874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F4EB72859AA6900834874 /* vChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F4EB82859AA6900834874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F4EC12859AA6900834874 /* vChatUITests.swift in Sources */,
+				C19F4EC32859AA6900834874 /* vChatUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C19F4EB42859AA6900834874 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19F4EA12859AA6700834874 /* vChat */;
+			targetProxy = C19F4EB32859AA6900834874 /* PBXContainerItemProxy */;
+		};
+		C19F4EBE2859AA6900834874 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19F4EA12859AA6700834874 /* vChat */;
+			targetProxy = C19F4EBD2859AA6900834874 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C19F4EC42859AA6900834874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C19F4EC52859AA6900834874 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C19F4EC72859AA6900834874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vChat/Preview Content\"";
+				DEVELOPMENT_TEAM = LZUKR73W9L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Criku.vChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C19F4EC82859AA6900834874 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vChat/Preview Content\"";
+				DEVELOPMENT_TEAM = LZUKR73W9L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Criku.vChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C19F4ECA2859AA6900834874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZUKR73W9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Criku.vChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vChat.app/vChat";
+			};
+			name = Debug;
+		};
+		C19F4ECB2859AA6900834874 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZUKR73W9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Criku.vChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vChat.app/vChat";
+			};
+			name = Release;
+		};
+		C19F4ECD2859AA6900834874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZUKR73W9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Criku.vChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vChat;
+			};
+			name = Debug;
+		};
+		C19F4ECE2859AA6900834874 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZUKR73W9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Criku.vChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C19F4E9D2859AA6700834874 /* Build configuration list for PBXProject "vChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F4EC42859AA6900834874 /* Debug */,
+				C19F4EC52859AA6900834874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19F4EC62859AA6900834874 /* Build configuration list for PBXNativeTarget "vChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F4EC72859AA6900834874 /* Debug */,
+				C19F4EC82859AA6900834874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19F4EC92859AA6900834874 /* Build configuration list for PBXNativeTarget "vChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F4ECA2859AA6900834874 /* Debug */,
+				C19F4ECB2859AA6900834874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19F4ECC2859AA6900834874 /* Build configuration list for PBXNativeTarget "vChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F4ECD2859AA6900834874 /* Debug */,
+				C19F4ECE2859AA6900834874 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C19F4E9A2859AA6700834874 /* Project object */;
+}
