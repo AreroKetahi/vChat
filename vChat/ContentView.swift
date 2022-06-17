@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-            Text("Tab Content 1")
+            Text("Chat Page")
                 .tabItem {
                     Label("Chat",systemImage: "message")
                 }.tag(1)
             
-            Text("Tab Content 2")
+            Text("Friends Page")
                 .tabItem {
                     Label("Friends",systemImage: "person.3")
                 }.tag(2)
