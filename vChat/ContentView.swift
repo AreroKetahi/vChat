@@ -20,9 +20,9 @@ struct ContentView: View {
                     Label("Friends",systemImage: "person.3")
                 }.tag(2)
             
-            Text("Perference Page")
+            Text("Preference Page")
                 .tabItem {
-                    Label("Perference", systemImage: "gear")
+                    Label("Preference", systemImage: "gear")
                 }.tag(3)
         }
     }
