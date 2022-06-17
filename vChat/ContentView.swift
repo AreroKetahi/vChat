@@ -9,13 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+            Text("Tab Content 1")
+                .tabItem {
+                    Label("Chat",systemImage: "message")
+                }.tag(1)
+            
+            Text("Tab Content 2")
+                .tabItem {
+                    Label("Friends",systemImage: "person.3")
+                }.tag(2)
+            
+            Text("Perference Page")
+                .tabItem {
+                    Label("Perference", systemImage: "gear")
+                }.tag(3)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 12 Pro")
     }
 }
