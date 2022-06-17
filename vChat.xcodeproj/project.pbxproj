@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C137669F285CA4E9002C457C /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C137669E285CA4E9002C457C /* Friend.swift */; };
 		C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EA52859AA6700834874 /* vChatApp.swift */; };
 		C19F4EA82859AA6700834874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EA72859AA6700834874 /* ContentView.swift */; };
 		C19F4EAA2859AA6900834874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F4EA92859AA6900834874 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C137669E285CA4E9002C457C /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		C19F4EA22859AA6700834874 /* vChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19F4EA52859AA6700834874 /* vChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatApp.swift; sourceTree = "<group>"; };
 		C19F4EA72859AA6700834874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C137669D285CA4CD002C457C /* PersonLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C137669E285CA4E9002C457C /* Friend.swift */,
+			);
+			path = PersonLibrary;
+			sourceTree = "<group>";
+		};
 		C19F4E992859AA6700834874 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		C19F4EA42859AA6700834874 /* vChat */ = {
 			isa = PBXGroup;
 			children = (
+				C137669D285CA4CD002C457C /* PersonLibrary */,
 				C19F4EA52859AA6700834874 /* vChatApp.swift */,
 				C19F4EA72859AA6700834874 /* ContentView.swift */,
 				C19F4EA92859AA6900834874 /* Assets.xcassets */,
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C137669F285CA4E9002C457C /* Friend.swift in Sources */,
 				C19F4EA82859AA6700834874 /* ContentView.swift in Sources */,
 				C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */,
 			);
