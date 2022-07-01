@@ -8,28 +8,32 @@
 import SwiftUI
 
 struct ChatList: View {
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
 //        NavigationView {//Need to notes this code while compiling
         List {
             NavigationLink {
-                ChatPage(objectsVars: EnviromentObjects())
+                ChatPage(objectsVars: VCEnvironmentObjects())
                     .navigationBarTitle("Zhang San")
             } label: {
                 HStack {
-                Image("TestImage")
-                    .resizable()
-                    .frame(width: 49, height: 49)
-                    .cornerRadius(8)
-                    .shadow(color: Color(CGColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)),
-                            radius: 3, x: 0, y: 0)
+                PersonHeadImage(imageName: "TestImage")
 
                 Text("Zhang San")
-                    .foregroundColor(.black)
-                    .shadow(color: Color(CGColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)),
+                        .foregroundColor(colorScheme == .light ? .black : .white)
+                    .shadow(color: Color(
+                        colorScheme == .light ?
+                        CGColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3) :
+                            CGColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 0.3)
+                    ),
                             radius: 1, x: 0, y: 0)
                 }
-                    .overlay(Circle().frame(width: 12, height: 12).position(x: 47, y: 3).foregroundColor(.blue).shadow(color: .blue, radius: 2)) //Notification Point
-                    
+                .overlay(Circle()
+                    .frame(width: 12, height: 12)
+                    .position(x: 47, y: 3)
+                    .foregroundColor(.blue)
+                    .shadow(color: .blue, radius: 2)
+                ) //Notification Point
             }
         }
         .navigationTitle("Chat")
@@ -40,6 +44,11 @@ struct ChatList: View {
 
 struct ChatList_Previews: PreviewProvider {
     static var previews: some View {
-        ChatList()
+        Group {
+            ChatList()
+            ChatList()
+                .preferredColorScheme(.dark)
+            
+        }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10807DA286EE15900F209A0 /* PersonHeadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10807D9286EE15900F209A0 /* PersonHeadImage.swift */; };
 		C137669F285CA4E9002C457C /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C137669E285CA4E9002C457C /* Friend.swift */; };
 		C13766A128658D5F002C457C /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13766A028658D5F002C457C /* ChatList.swift */; };
 		C13766A428658E9E002C457C /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13766A328658E9E002C457C /* ChatPage.swift */; };
@@ -18,6 +19,8 @@
 		C19F4EB72859AA6900834874 /* vChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EB62859AA6900834874 /* vChatTests.swift */; };
 		C19F4EC12859AA6900834874 /* vChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EC02859AA6900834874 /* vChatUITests.swift */; };
 		C19F4EC32859AA6900834874 /* vChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */; };
+		C1ABE72C286F25FF00D0BC39 /* MessagePopReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */; };
+		C1ABE72E286F274800D0BC39 /* MessagePopSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C10807D9286EE15900F209A0 /* PersonHeadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeadImage.swift; sourceTree = "<group>"; };
 		C137669E285CA4E9002C457C /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		C13766A028658D5F002C457C /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		C13766A328658E9E002C457C /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		C19F4EBC2859AA6900834874 /* vChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19F4EC02859AA6900834874 /* vChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatUITests.swift; sourceTree = "<group>"; };
 		C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopReceive.swift; sourceTree = "<group>"; };
+		C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopSent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C10807D8286EE14300F209A0 /* GlobalLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C10807D9286EE15900F209A0 /* PersonHeadImage.swift */,
+			);
+			path = GlobalLibrary;
+			sourceTree = "<group>";
+		};
 		C137669D285CA4CD002C457C /* PersonLibrary */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +107,7 @@
 				C13766A028658D5F002C457C /* ChatList.swift */,
 				C13766A328658E9E002C457C /* ChatPage.swift */,
 				C16A96EA286DD84200AAE1D7 /* Message.swift */,
+				C1ABE72A286F25E600D0BC39 /* MessagePops */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -120,6 +135,7 @@
 		C19F4EA42859AA6700834874 /* vChat */ = {
 			isa = PBXGroup;
 			children = (
+				C10807D8286EE14300F209A0 /* GlobalLibrary */,
 				C137669D285CA4CD002C457C /* PersonLibrary */,
 				C19F4EA52859AA6700834874 /* vChatApp.swift */,
 				C19F4EA72859AA6700834874 /* ContentView.swift */,
@@ -153,6 +169,15 @@
 				C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */,
 			);
 			path = vChatUITests;
+			sourceTree = "<group>";
+		};
+		C1ABE72A286F25E600D0BC39 /* MessagePops */ = {
+			isa = PBXGroup;
+			children = (
+				C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */,
+				C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */,
+			);
+			path = MessagePops;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,12 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10807DA286EE15900F209A0 /* PersonHeadImage.swift in Sources */,
+				C1ABE72C286F25FF00D0BC39 /* MessagePopReceive.swift in Sources */,
 				C137669F285CA4E9002C457C /* Friend.swift in Sources */,
 				C19F4EA82859AA6700834874 /* ContentView.swift in Sources */,
 				C13766A128658D5F002C457C /* ChatList.swift in Sources */,
 				C16A96EB286DD84200AAE1D7 /* Message.swift in Sources */,
 				C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */,
 				C13766A428658E9E002C457C /* ChatPage.swift in Sources */,
+				C1ABE72E286F274800D0BC39 /* MessagePopSent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
