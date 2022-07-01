@@ -17,6 +17,7 @@ struct ChatPage: View {
                 ForEach(objectsVars.messages){ messages in
                     if messages.isReceive {
                         HStack {
+                            Spacer().frame(width: 20)
                             Image("TestImage")
                                 .resizable()
                                 .frame(width: 49, height: 49)
@@ -49,6 +50,7 @@ struct ChatPage: View {
                                 .cornerRadius(8)
                                 .shadow(color: Color(CGColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)),
                                         radius: 3, x: 0, y: 0)
+                            Spacer().frame(width:20)
                         } // Self Messages
                     }
                 }
@@ -70,8 +72,8 @@ struct ChatPage: View {
                 .frame(height: 40)
                 .cornerRadius(8)
             } // Message Pop
+            .padding()
         }
-        .padding([.leading, .bottom, .trailing])
     }
     
     func vDidSendMessage() {
