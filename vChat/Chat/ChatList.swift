@@ -32,6 +32,8 @@ struct ChatList: View {
                     
             }
         }
+        .navigationTitle("Chat")
+        .navigationBarTitleDisplayMode(.inline)
 //      } //Need to notes this code while compiling
     }
 }
