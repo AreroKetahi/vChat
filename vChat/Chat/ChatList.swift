@@ -12,11 +12,11 @@ struct ChatList: View {
 //        NavigationView {//Need to notes this code while compiling
         List {
             NavigationLink {
-                ChatPage()
+                ChatPage(objectsVars: EnviromentObjects())
+                    .navigationBarTitle("Zhang San")
             } label: {
                 HStack {
                 Image("TestImage")
-                
                     .resizable()
                     .frame(width: 49, height: 49)
                     .cornerRadius(8)
@@ -32,8 +32,6 @@ struct ChatList: View {
                     
             }
         }
-        .navigationTitle("Chat")
-        .navigationBarTitleDisplayMode(.inline)
 //      } //Need to notes this code while compiling
     }
 }

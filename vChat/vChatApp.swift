@@ -12,6 +12,7 @@ struct vChatApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(EnviromentObjects())
         }
     }
 }
