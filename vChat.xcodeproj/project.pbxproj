@@ -21,6 +21,7 @@
 		C19F4EC32859AA6900834874 /* vChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */; };
 		C1ABE72C286F25FF00D0BC39 /* MessagePopReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */; };
 		C1ABE72E286F274800D0BC39 /* MessagePopSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */; };
+		C1D1499A286F49B400011F17 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D14999286F49B400011F17 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopReceive.swift; sourceTree = "<group>"; };
 		C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopSent.swift; sourceTree = "<group>"; };
+		C1D14999286F49B400011F17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C10807D9286EE15900F209A0 /* PersonHeadImage.swift */,
+				C1D14999286F49B400011F17 /* Extensions.swift */,
 			);
 			path = GlobalLibrary;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				C137669F285CA4E9002C457C /* Friend.swift in Sources */,
 				C19F4EA82859AA6700834874 /* ContentView.swift in Sources */,
 				C13766A128658D5F002C457C /* ChatList.swift in Sources */,
+				C1D1499A286F49B400011F17 /* Extensions.swift in Sources */,
 				C16A96EB286DD84200AAE1D7 /* Message.swift in Sources */,
 				C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */,
 				C13766A428658E9E002C457C /* ChatPage.swift in Sources */,

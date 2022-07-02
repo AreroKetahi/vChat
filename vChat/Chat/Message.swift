@@ -28,6 +28,23 @@ final class VCEnvironmentObjects: ObservableObject {
     @Published var messages = [
         VCMessage(messageContent: "Hello World!", isReceive: true),
         VCMessage(messageContent: "Yeah it is, how are you?", isReceive: false),
-        VCMessage(messageContent: "Pretty, an't you?", isReceive: true)
+        VCMessage(messageContent: "Pretty, an't you?", isReceive: true),
+        VCMessage(messageContent: "Let's do it again!", isReceive: false),
+        VCMessage(messageContent: "Hello World!", isReceive: true),
+        VCMessage(messageContent: "Yeah it is, how are you?", isReceive: false),
+        VCMessage(messageContent: "Pretty, an't you?", isReceive: true),
+        VCMessage(messageContent: "Let's do it again!", isReceive: false),
+        VCMessage(messageContent: "Hello World!", isReceive: true),
+        VCMessage(messageContent: "Yeah it is, how are you?", isReceive: false),
+        VCMessage(messageContent: "Pretty, an't you?", isReceive: true),
+        VCMessage(messageContent: "Let's do it again!", isReceive: false),
+        VCMessage(messageContent: "Hello World!", isReceive: true),
+        VCMessage(messageContent: "Yeah it is, how are you?", isReceive: false),
+        VCMessage(messageContent: "Pretty, an't you?", isReceive: true),
+        VCMessage(messageContent: "Let's do it again!", isReceive: false),
+        VCMessage(messageContent: "Hello World!", isReceive: true),
+        VCMessage(messageContent: "Yeah it is, how are you?", isReceive: false),
+        VCMessage(messageContent: "Pretty, an't you?", isReceive: true),
+        VCMessage(messageContent: "Let's do it again!", isReceive: false)
     ]
 }

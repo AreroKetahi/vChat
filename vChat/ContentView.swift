@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView {
-                ChatList()
+                ChatList(friendList: friendList)
                     .tabItem {
                         Label("Chat",systemImage: "message")
                     }.tag(1)
