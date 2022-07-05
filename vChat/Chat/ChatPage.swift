@@ -30,7 +30,7 @@ struct ChatPage: View {
                 }
                 Spacer().frame(height: 10)
                 Spacer().frame(height: 44) // Safe Area
-                Spacer().frame(height: errorCorrectionSpace)
+                Spacer().frame(height: errorCorrectionSpace) //Error Correction Space
                 Rectangle() // Location Point
                     .foregroundColor(Color(.displayP3, red: 0.5, green: 0.5, blue: 0.5, opacity: 0))
                     .id(locationPoint)
@@ -45,33 +45,25 @@ struct ChatPage: View {
                             withAnimation {
                                 proxy.scrollTo(locationPoint, anchor: .bottom)
                             }
-                            vDidSendMessage()
-                        },
-                        onCommit: {
-                            withAnimation {
-                                proxy.scrollTo(locationPoint, anchor: .top)
-                            }
-                            vDidSendMessage()
-                            focusPoint = .messagePop
                         }
                     )
+                    .submitLabel(.done)
                     .focused($focusPoint, equals: .messagePop)
-                    .submitLabel(.send)
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 10,style: .continuous)
-                            .foregroundColor(
-                                colorScheme == .light ?
-                                Color(.displayP3, red: 0.9, green: 0.9, blue: 0.9, opacity: 1) :
-                                    Color(.displayP3, red: 0.2, green: 0.2, blue: 0.2, opacity: 1)
-                            )
-                            .frame(height: 40)
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 10,style: .continuous)
+                        .foregroundColor(
+                            colorScheme == .light ?
+                            Color(.displayP3, red: 0.9, green: 0.9, blue: 0.9, opacity: 0.8) :
+                                Color(.displayP3, red: 0.2, green: 0.2, blue: 0.2, opacity: 0.8)
                         )
-                    Button("Send") {
-                        withAnimation {
+                        .frame(height: 40)
+                    )
+                    
+                     Button("Send") {
+                         withAnimation {
                             proxy.scrollTo(locationPoint, anchor: .top)
                         }
                         vDidSendMessage()
-
                     }
                     .foregroundColor(.white)
                     .padding()
@@ -88,19 +80,14 @@ struct ChatPage: View {
             }
         }
         .onTapGesture {
-            let tempStorage = inputMessage
-            inputMessage = ""
             UIApplication.shared.endEditing()
-            inputMessage = tempStorage
         }
     }
     
     func vDidSendMessage() {
         if inputMessage != "" {
-            focusPoint = nil
             objectsVars.messages.append(VCMessage(messageContent: inputMessage, isReceive: false))
             inputMessage = ""
-            focusPoint = .messagePop
         }
     }
 }
