@@ -14,17 +14,17 @@ struct ContentView: View {
                 ChatList(friendList: friendList)
                     .tabItem {
                         Label("Chat",systemImage: "message")
-                    }.tag(1)
+                    }
                 
                 Text("Friends Page")
                     .tabItem {
                         Label("Friends",systemImage: "person.3")
-                    }.tag(2)
+                    }
                 
                 Text("Preference Page")
                     .tabItem {
                         Label("Preference", systemImage: "gear")
-                    }.tag(3)
+                    }
             }
         }
     }
