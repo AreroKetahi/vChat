@@ -25,6 +25,10 @@ struct ContentView: View {
                     .tabItem {
                         Label("Preference", systemImage: "gear")
                     }
+                Text("Me")
+                    .tabItem {
+                        Label("Me", systemImage: "gear1")
+                    }
             }
         }
     }
