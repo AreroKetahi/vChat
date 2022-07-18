@@ -16,9 +16,9 @@ struct ContentView: View {
                         Label("Chat",systemImage: "message")
                     }
                 
-                Text("Friends Page")
+                Text("Contacts Page")
                     .tabItem {
-                        Label("Friends",systemImage: "person.3")
+                        Label("Contacts",systemImage: "person.2.crop.square.stack")
                     }
                 
                 Text("Preference Page")
