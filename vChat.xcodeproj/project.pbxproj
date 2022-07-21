@@ -24,6 +24,7 @@
 		C1C763FF2889034F003F04E0 /* GlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C763FE2889034F003F04E0 /* GlobalVars.swift */; };
 		C1C76401288905BC003F04E0 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C76400288905BC003F04E0 /* ContactList.swift */; };
 		C1C7640428891CD6003F04E0 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C7640328891CD6003F04E0 /* Components.swift */; };
+		C1C7640628893FD6003F04E0 /* ContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C7640528893FD6003F04E0 /* ContactPage.swift */; };
 		C1D1499A286F49B400011F17 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D14999286F49B400011F17 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		C1C763FE2889034F003F04E0 /* GlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVars.swift; sourceTree = "<group>"; };
 		C1C76400288905BC003F04E0 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		C1C7640328891CD6003F04E0 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		C1C7640528893FD6003F04E0 /* ContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPage.swift; sourceTree = "<group>"; };
 		C1D14999286F49B400011F17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				C1C76400288905BC003F04E0 /* ContactList.swift */,
+				C1C7640528893FD6003F04E0 /* ContactPage.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				C19F4EA82859AA6700834874 /* ContentView.swift in Sources */,
 				C13766A128658D5F002C457C /* ChatList.swift in Sources */,
 				C1D1499A286F49B400011F17 /* Extensions.swift in Sources */,
+				C1C7640628893FD6003F04E0 /* ContactPage.swift in Sources */,
 				C16A96EB286DD84200AAE1D7 /* Message.swift in Sources */,
 				C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */,
 				C13766A428658E9E002C457C /* ChatPage.swift in Sources */,

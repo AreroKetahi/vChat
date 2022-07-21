@@ -37,6 +37,7 @@ struct ChatPage: View {
                     .id(locationPoint)
                 Spacer()
             }
+            .onAppear(perform: {proxy.scrollTo(locationPoint, anchor: .bottom)})
             .overlay(alignment: .bottom) {
                 HStack {
                     TextField(

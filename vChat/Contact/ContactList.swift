@@ -11,7 +11,12 @@ struct ContactList: View {
     @Environment(\.colorScheme) private var colorScheme
     var body: some View {
         List(friendList){ friend in
-            PersonLabelComponent(imageName: friend.imageName, nickname: friend.nickname)
+            NavigationLink {
+                ContactPage()
+                    .navigationBarTitle("Details")
+            } label: {
+                PersonLabelComponent(imageName: friend.imageName, nickname: friend.nickname)
+            }
         }
 //        .navigationTitle("Contacts")
     }

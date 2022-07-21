@@ -11,8 +11,10 @@ import SwiftUI
 struct vChatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(VCEnvironmentObjects())
+            NavigationView {
+                ContentView()
+                    .environmentObject(VCEnvironmentObjects())
+            }
         }
     }
 }
