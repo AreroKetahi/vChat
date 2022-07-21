@@ -13,7 +13,7 @@ struct ContactList: View {
         List(friendList){ friend in
             PersonLabelComponent(imageName: friend.imageName, nickname: friend.nickname)
         }
-        .navigationTitle("Contacts")
+//        .navigationTitle("Contacts")
     }
 }
 

@@ -8,24 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = 0
+    @State private var navigationTitle = ["Chat","Contacts","Preference"]
     var body: some View {
         NavigationView {
-            TabView {
+            TabView(selection: $selection) {
                 ChatList(friendList: friendList)
                     .tabItem {
                         Label("Chat",systemImage: "message")
                     }
+                    .tag(0)
                 
-                Text("Contacts Page")
+                ContactList()
                     .tabItem {
                         Label("Contacts",systemImage: "person.2.crop.square.stack")
                     }
+                    .tag(1)
                 
                 Text("Preference Page")
                     .tabItem {
                         Label("Preference", systemImage: "gear")
                     }
+                    .tag(2)
             }
+            .navigationBarTitle(navigationTitle[selection])
         }
     }
 }

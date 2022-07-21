@@ -16,7 +16,7 @@ struct ChatList: View {
         List(friendList) { friend in
             NavigationLink {
                 ChatPage(friendImageName: friend.imageName, selfImageName: nil, objectsVars: VCEnvironmentObjects())
-                    .navigationBarTitle("Zhang San")
+                    .navigationBarTitle(friend.nickname)
             } label: {
                 PersonLabelComponent(imageName: friend.imageName, nickname: friend.nickname)
                 .overlay(Circle()
@@ -27,7 +27,7 @@ struct ChatList: View {
                 ) //Notification Point
             }
         }
-        .navigationTitle("Chat")
+//        .navigationTitle("Chat")
         .navigationBarTitleDisplayMode(.inline)
 //      } //Need to notes this code while compiling
     }
