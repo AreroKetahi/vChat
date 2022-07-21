@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MessagePopSent: View {
     var messages: VCMessage
+    var imageName: String?
     var body: some View {
         HStack {
             Spacer()
@@ -26,7 +27,7 @@ struct MessagePopSent: View {
                 .frame(height: 49)
                 .shadow(color: Color(.displayP3, red: 0/255, green: 122/255, blue: 255/255, opacity: 0.5),
                         radius: 5, x: 0, y: 0)
-            PersonHeadImage(imageName: "EmptyHeadImage")
+            PersonHeadImage(imageName: imageName != nil ? imageName! : "EmptyHeadImage")
             Spacer().frame(width:20)
         } // Self Messages
     }

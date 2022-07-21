@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChatPage: View {
     var friendImageName: String?
+    var selfImageName: String?
     
     @Environment(\.colorScheme) var colorScheme
     @State private var inputMessage = ""
@@ -23,9 +24,9 @@ struct ChatPage: View {
             ScrollView {
                 ForEach(objectsVars.messages){ messages in
                     if messages.isReceive {
-                        MessagePopReceive(messages: messages)
+                        MessagePopReceive(messages: messages, imageName: friendImageName)
                     } else {
-                        MessagePopSent(messages: messages)
+                        MessagePopSent(messages: messages, imageName: selfImageName)
                     }
                 }
                 Spacer().frame(height: 10)
@@ -96,6 +97,8 @@ struct ChatPage_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ChatPage(friendImageName: "TestImage", objectsVars: VCEnvironmentObjects())
+                .environmentObject(VCEnvironmentObjects())
+            ChatPage(friendImageName: "EmptyHeadImage", objectsVars: VCEnvironmentObjects())
                 .environmentObject(VCEnvironmentObjects())
             ChatPage(friendImageName: "TestImage", objectsVars: VCEnvironmentObjects())
                 .environmentObject(VCEnvironmentObjects())

@@ -10,10 +10,11 @@ import SwiftUI
 struct MessagePopReceive: View {
     @Environment(\.colorScheme) var colorScheme
     var messages: VCMessage
+    var imageName: String?
     var body: some View {
         HStack {
             Spacer().frame(width: 20)
-            PersonHeadImage(imageName: "TestImage")
+            PersonHeadImage(imageName: imageName != nil ? imageName! : "EmptyHeadImage")
             Text(messages.messageContent)
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 10,style: .continuous)
