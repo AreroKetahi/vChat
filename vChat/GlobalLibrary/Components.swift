@@ -30,5 +30,6 @@ struct PersonLabelComponent: View {
 struct PersonLabelComponent_Previews: PreviewProvider {
     static var previews: some View {
         PersonLabelComponent(imageName: nil, nickname: "Test Name")
+            .previewLayout(.fixed(width: 300, height: 70))
     }
 }
