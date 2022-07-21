@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MessagePopReceive: View {
-    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) private var colorScheme
     var messages: VCMessage
     var imageName: String?
     var body: some View {

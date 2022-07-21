@@ -11,7 +11,7 @@ struct ChatPage: View {
     var friendImageName: String?
     var selfImageName: String?
     
-    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) private var colorScheme
     @State private var inputMessage = ""
     @ObservedObject var objectsVars = VCEnvironmentObjects()
     @FocusState var focusPoint: FocusEnum?
