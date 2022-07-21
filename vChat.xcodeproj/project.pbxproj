@@ -22,6 +22,8 @@
 		C1ABE72C286F25FF00D0BC39 /* MessagePopReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */; };
 		C1ABE72E286F274800D0BC39 /* MessagePopSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */; };
 		C1C763FF2889034F003F04E0 /* GlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C763FE2889034F003F04E0 /* GlobalVars.swift */; };
+		C1C76401288905BC003F04E0 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C76400288905BC003F04E0 /* ContactList.swift */; };
+		C1C7640428891CD6003F04E0 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C7640328891CD6003F04E0 /* Components.swift */; };
 		C1D1499A286F49B400011F17 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D14999286F49B400011F17 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopReceive.swift; sourceTree = "<group>"; };
 		C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopSent.swift; sourceTree = "<group>"; };
 		C1C763FE2889034F003F04E0 /* GlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVars.swift; sourceTree = "<group>"; };
+		C1C76400288905BC003F04E0 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		C1C7640328891CD6003F04E0 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		C1D14999286F49B400011F17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +98,7 @@
 			children = (
 				C10807D9286EE15900F209A0 /* PersonHeadImage.swift */,
 				C1D14999286F49B400011F17 /* Extensions.swift */,
+				C1C7640328891CD6003F04E0 /* Components.swift */,
 			);
 			path = GlobalLibrary;
 			sourceTree = "<group>";
@@ -141,10 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				C19F4EA72859AA6700834874 /* ContentView.swift */,
+				C19F4EA52859AA6700834874 /* vChatApp.swift */,
 				C10807D8286EE14300F209A0 /* GlobalLibrary */,
 				C137669D285CA4CD002C457C /* PersonLibrary */,
-				C19F4EA52859AA6700834874 /* vChatApp.swift */,
 				C13766A228658E91002C457C /* Chat */,
+				C1C76402288905C5003F04E0 /* Contact */,
 				C1C763FE2889034F003F04E0 /* GlobalVars.swift */,
 				C19F4EA92859AA6900834874 /* Assets.xcassets */,
 				C19F4EAB2859AA6900834874 /* Preview Content */,
@@ -184,6 +190,14 @@
 				C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */,
 			);
 			path = MessagePops;
+			sourceTree = "<group>";
+		};
+		C1C76402288905C5003F04E0 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				C1C76400288905BC003F04E0 /* ContactList.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +330,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C7640428891CD6003F04E0 /* Components.swift in Sources */,
+				C1C76401288905BC003F04E0 /* ContactList.swift in Sources */,
 				C10807DA286EE15900F209A0 /* PersonHeadImage.swift in Sources */,
 				C1C763FF2889034F003F04E0 /* GlobalVars.swift in Sources */,
 				C1ABE72C286F25FF00D0BC39 /* MessagePopReceive.swift in Sources */,
