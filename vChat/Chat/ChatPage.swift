@@ -101,9 +101,6 @@ struct ChatPage_Previews: PreviewProvider {
                 .environmentObject(VCEnvironmentObjects())
             ChatPage(friendImageName: "EmptyHeadImage", objectsVars: VCEnvironmentObjects())
                 .environmentObject(VCEnvironmentObjects())
-            ChatPage(friendImageName: "TestImage", objectsVars: VCEnvironmentObjects())
-                .environmentObject(VCEnvironmentObjects())
-                .preferredColorScheme(.dark)
         }
     }
 }
