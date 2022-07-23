@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContactPage: View {
+    var person: Person
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
@@ -19,10 +20,19 @@ struct ContactPage: View {
 //                .padding()
                 
                 VStack(alignment: .leading) {
-                    Text("Zhang San")
+                    Text(person.remark ?? person.nickname)
                         .font(.title)
-                    Text("Nickname: \("Zhang Yiersan")")
-                    Text("UID:\("1234567")")
+                    
+                    HStack {
+                        Text("Nickname:").bold()
+                        Text("\(person.nickname)")
+                    }
+                    
+                    HStack {
+                        Text("UID:").bold()
+                        Text("\(String(person.uid))")
+                            .font(.system(size: 18, design: .monospaced))
+                    }
                 }
                 .padding()
                 Spacer()
@@ -30,8 +40,8 @@ struct ContactPage: View {
             }
             
             Text("This is your friend witch is added by his/her UID.")
-                .font(.headline)
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .font(.system(size: 15, weight: .light))
+                .padding()
             Spacer()
         }
         .padding()
@@ -40,6 +50,6 @@ struct ContactPage: View {
 
 struct ContactPage_Previews: PreviewProvider {
     static var previews: some View {
-        ContactPage()
+        ContactPage(person: friendList[0])
     }
 }

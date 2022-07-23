@@ -16,9 +16,9 @@ struct ChatList: View {
         List(friendList) { friend in
             NavigationLink {
                 ChatPage(friendImageName: friend.imageName, selfImageName: nil, objectsVars: VCEnvironmentObjects())
-                    .navigationBarTitle(friend.nickname)
+                    .navigationBarTitle(friend.remark ?? friend.nickname)
             } label: {
-                PersonLabelComponent(imageName: friend.imageName, nickname: friend.nickname)
+                PersonLabelComponent(imageName: friend.imageName, nickname: friend.remark ?? friend.nickname)
                 .overlay(Circle()
                     .frame(width: 12, height: 12)
                     .position(x: 47, y: 3)

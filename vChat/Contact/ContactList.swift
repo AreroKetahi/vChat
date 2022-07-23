@@ -12,7 +12,7 @@ struct ContactList: View {
     var body: some View {
         List(friendList){ friend in
             NavigationLink {
-                ContactPage()
+                ContactPage(person: friend)
                     .navigationBarTitle("Details")
             } label: {
                 PersonLabelComponent(imageName: friend.imageName, nickname: friend.nickname)
