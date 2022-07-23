@@ -97,9 +97,9 @@ struct ChatPage: View {
 struct ChatPage_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ChatPage(friendImageName: "TestImage", objectsVars: VCEnvironmentObjects())
+            ChatPage(friendImageName: "TestImage", selfImageName: selfImageName, objectsVars: VCEnvironmentObjects())
                 .environmentObject(VCEnvironmentObjects())
-            ChatPage(friendImageName: "EmptyHeadImage", objectsVars: VCEnvironmentObjects())
+            ChatPage(friendImageName: "EmptyHeadImage", selfImageName: selfImageName, objectsVars: VCEnvironmentObjects())
                 .environmentObject(VCEnvironmentObjects())
         }
     }
