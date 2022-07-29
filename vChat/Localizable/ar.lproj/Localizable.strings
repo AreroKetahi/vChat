@@ -1,0 +1,27 @@
+
+/* super:ChatPage */
+"ChatPage.Messages" = "أدخل المعلومات";
+
+/* super:ChatPage */
+"ChatPage.Send" = "إرسال";
+
+/* super:ContactList */
+"ContactList.Details" = "معلومات اكثر";
+
+/* super:ContactPage */
+"ContactPage.DownText" = "هذا هو الصديق الذي أضفته من المعرف الفريد الخاص به.";
+
+/* super:ContactPage */
+"ContactPage.Nickname" = "كنية:";
+
+/* super:ContactPage */
+"ContactPage.UID" = "المعرف الفريد:";
+
+/* super:Content */
+"Content.Chat" = "للدردشة معه";
+
+/* super:Content */
+"Content.Contacts" = "دليل العناوين";
+
+/* super:Content */
+"Content.Preference" = "اقامة";
