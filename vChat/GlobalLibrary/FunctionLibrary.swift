@@ -12,7 +12,7 @@ import Foundation
 /// - Returns: Language identifer
 func getLocalLanguageCode() -> String? {
     let uiLocalLanguageCode = Locale.current.identifier
-    let avaliableLanguagesIdentifer = ["en", "zh-Hans", "de","zh-Hant", "ru", "fr", "ja", "es", "ko"]
+    let avaliableLanguagesIdentifer = ["en", "zh-Hans", "de","zh-Hant", "ru", "fr", "ja", "es", "ko", "ar"]
     
     var languageIdentifer: String?
     for i in 0...(avaliableLanguagesIdentifer.count - 1) {
