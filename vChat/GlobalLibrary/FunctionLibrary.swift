@@ -7,6 +7,9 @@
 
 import Foundation
 
+
+/// A function that can get application language's identifer
+/// - Returns: Language identifer
 func getLocalLanguageCode() -> String? {
     let uiLocalLanguageCode = Locale.current.identifier
     let avaliableLanguagesIdentifer = ["en", "zh-Hans", "de","zh-Hant", "ru", "fr", "ja", "es", "ko"]
