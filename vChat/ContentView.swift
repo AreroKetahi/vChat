@@ -15,19 +15,19 @@ struct ContentView: View {
             TabView(selection: $selection) {
                 ChatList(friendList: friendList)
                     .tabItem {
-                        Label("Chat",systemImage: "message")
+                        Label("Content.Chat",systemImage: "message")
                     }
                     .tag(0)
                 
                 ContactList()
                     .tabItem {
-                        Label("Contacts",systemImage: "person.2.crop.square.stack")
+                        Label("Content.Contacts",systemImage: "person.2.crop.square.stack")
                     }
                     .tag(1)
                 
                 Text("Preference Page")
                     .tabItem {
-                        Label("Preference", systemImage: "gear")
+                        Label("Content.Preference", systemImage: "gear")
                     }
                     .tag(2)
             }

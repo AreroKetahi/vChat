@@ -1,0 +1,27 @@
+
+/* super:ChatPage */
+"ChatPage.Messages" = "情報";
+
+/* super:ChatPage */
+"ChatPage.Send" = "送信";
+
+/* super:ContactList */
+"ContactList.Details" = "詳しくは";
+
+/* super:ContactPage */
+"ContactPage.DownText" = "これはあなたの友達で、彼/彼女のUIDによって追加されます。";
+
+/* super:ContactPage */
+"ContactPage.Nickname" = "ニックネーム：";
+
+/* super:ContactPage */
+"ContactPage.UID" = "UID:";
+
+/* super:Content */
+"Content.Chat" = "チャット";
+
+/* super:Content */
+"Content.Contacts" = "住所録";
+
+/* super:Contact */
+"Content.Preference" = "環境設定";

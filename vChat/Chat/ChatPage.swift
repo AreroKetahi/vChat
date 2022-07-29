@@ -41,7 +41,7 @@ struct ChatPage: View {
             .overlay(alignment: .bottom) {
                 HStack {
                     TextField(
-                        "Messages",
+                        "ChatPage.Messages",
                         text: $inputMessage,
                         onEditingChanged: { _ in
                             withAnimation {
@@ -61,7 +61,7 @@ struct ChatPage: View {
                         .frame(height: 40)
                     )
                     
-                     Button("Send") {
+                     Button("ChatPage.Send") {
                          withAnimation {
                             proxy.scrollTo(locationPoint, anchor: .top)
                         }

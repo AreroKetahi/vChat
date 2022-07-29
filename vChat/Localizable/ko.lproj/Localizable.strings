@@ -1,0 +1,27 @@
+
+/* super:ChatPage */
+"ChatPage.Messages" = "정보 입력";
+
+/* super:ChatPage */
+"ChatPage.Send" = "보내다";
+
+/* super:ContactList */
+"ContactList.Details" = "추가 정보";
+
+/* super:ContactPage */
+"ContactPage.DownText" = "이것은 당신이 그/그녀의 UID에서 추가한 친구입니다.";
+
+/* super:ContactPage */
+"ContactPage.Nickname" = "닉네임:";
+
+/* super:ContactPage */
+"ContactPage.UID" = "UID:";
+
+/* super:Content */
+"Content.Chat" = "채팅";
+
+/* super:Content */
+"Content.Contacts" = "주소록";
+
+/* super:Contact */
+"Content.Preference" = "설정";

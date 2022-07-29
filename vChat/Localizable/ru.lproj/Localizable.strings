@@ -1,0 +1,27 @@
+
+/* super:ChatPage */
+"ChatPage.Messages" = "Введите информацию";
+
+/* super:ChatPage */
+"ChatPage.Send" = "Отправить";
+
+/* super:ContactList */
+"ContactList.Details" = "Более";
+
+/* super:ContactPage */
+"ContactPage.DownText" = "Это друг, которого вы добавили по его/ее UID.";
+
+/* super:ContactPage */
+"ContactPage.Nickname" = "Никнейм:";
+
+/* super:ContactPage */
+"ContactPage.UID" = "UID:";
+
+/* super:Content */
+"Content.Chat" = "поболтать";
+
+/* super:Content */
+"Content.Contacts" = "адресная книга";
+
+/* super:Contact */
+"Content.Preference" = "Настройки";

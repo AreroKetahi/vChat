@@ -24,12 +24,12 @@ struct ContactPage: View {
                         .font(.title)
                     
                     HStack {
-                        Text("Nickname:").bold()
+                        Text("ContactPage.Nickname").bold()
                         Text("\(person.nickname)")
                     }
                     
                     HStack {
-                        Text("UID:").bold()
+                        Text("ContactPage.UID").bold()
                         Text("\(String(person.uid))")
                             .font(.system(size: 18, design: .monospaced))
                     }
@@ -39,7 +39,7 @@ struct ContactPage: View {
                 
             }
             
-            Text("This is your friend witch is added by his/her UID.")
+            Text("ContactPage.DownText")
                 .font(.system(size: 15, weight: .light))
                 .padding()
             Spacer()

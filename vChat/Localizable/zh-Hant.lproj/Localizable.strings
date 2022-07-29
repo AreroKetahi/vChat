@@ -1,0 +1,27 @@
+
+/* super:ChatPage */
+"ChatPage.Messages" = "輸入信息";
+
+/* super:ChatPage */
+"ChatPage.Send" = "發送";
+
+/* super:ContactList */
+"ContactList.Details" = "更多信息";
+
+/* super:ContactPage */
+"ContactPage.DownText" = "這是你從他/她的UID添加的朋友。";
+
+/* super:ContactPage */
+"ContactPage.Nickname" = "暱稱：";
+
+/* super:ContactPage */
+"ContactPage.UID" = "UID：";
+
+/* super:Content */
+"Content.Chat" = "聊天";
+
+/* super:Content */
+"Content.Contacts" = "通訊錄";
+
+/* super:Content */
+"Content.Preference" = "設置";

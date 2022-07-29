@@ -1,0 +1,27 @@
+
+/* super:ChatPage */
+"ChatPage.Messages" = "Messages";
+
+/* super:ChatPage */
+"ChatPage.Send" = "Send";
+
+/* super:ContactList */
+"ContactList.Details" = "Details";
+
+/* super:ContactPage */
+"ContactPage.DownText" = "This is your friend which is added by his/her UID.";
+
+/* super:ContactPage */
+"ContactPage.Nickname" = "Nickname:";
+
+/* super:ContactPage */
+"ContactPage.UID" = "UID:";
+
+/* super:Content */
+"Content.Chat" = "Chat";
+
+/* super:Content */
+"Content.Contacts" = "Contacts";
+
+/* super:Contact */
+"Content.Preference" = "Preference";
