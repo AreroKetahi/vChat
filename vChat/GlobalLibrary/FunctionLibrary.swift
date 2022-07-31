@@ -23,3 +23,13 @@ func getLocalLanguageCode() -> String? {
     
     return languageIdentifer
 }
+
+func isRightToLeftEnable() -> Bool {
+    let filpLanguages = ["ar"]
+    
+    if filpLanguages.contains(getLocalLanguageCode()!) {
+        return true
+    } else {
+        return false
+    }
+}
