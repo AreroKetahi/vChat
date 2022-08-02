@@ -37,9 +37,6 @@ struct ChatList_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ChatList(friendList: friendList)
-            ChatList(friendList: friendList)
-                .preferredColorScheme(.dark)
-            
         }
     }
 }
