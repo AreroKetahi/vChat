@@ -15,6 +15,9 @@
 "ContactPage.Nickname" = "كنية:";
 
 /* super:ContactPage */
+"ContactPage.SendingMessage" = "إرسال رسالة";
+
+/* super:ContactPage */
 "ContactPage.UID" = "المعرف الفريد:";
 
 /* super:Content */

@@ -15,6 +15,9 @@
 "ContactPage.Nickname" = "Surnom:";
 
 /* super:ContactPage */
+"ContactPage.SendingMessage" = "Envoyer un Message";
+
+/* super:ContactPage */
 "ContactPage.UID" = "UID:";
 
 /* super:Content */

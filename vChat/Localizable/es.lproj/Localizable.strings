@@ -15,6 +15,9 @@
 "ContactPage.Nickname" = "Apodo:";
 
 /* super:ContactPage */
+"ContactPage.SendingMessage" = "Enviar Mensaje";
+
+/* super:ContactPage */
 "ContactPage.UID" = "UID:";
 
 /* super:Content */

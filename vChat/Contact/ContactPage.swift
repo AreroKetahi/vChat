@@ -43,6 +43,27 @@ struct ContactPage: View {
                 .font(.system(size: 15, weight: .light))
                 .padding()
             Spacer()
+                .frame(height: 30)
+            
+            NavigationLink{
+                ChatPage(friendImageName: person.imageName, selfImageName: selfImageName, objectsVars: VCEnvironmentObjects())
+                    .navigationBarTitle(person.remark ?? person.nickname)
+            } label: {
+                HStack {
+                    Spacer()
+                    Image(systemName: "message.fill")
+                        .foregroundColor(.white)
+                    Text("ContactPage.SendingMessage")
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                .background(
+                    RoundedRectangle(cornerRadius: 15, style: .continuous)
+                        .frame(height: 50)
+                        .foregroundColor(.blue)
+                )
+            }
+            Spacer()
         }
         .padding()
     }

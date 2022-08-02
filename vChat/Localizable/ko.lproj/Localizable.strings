@@ -15,6 +15,9 @@
 "ContactPage.Nickname" = "닉네임:";
 
 /* super:ContactPage */
+"ContactPage.SendingMessage" = "문자 보내";
+
+/* super:ContactPage */
 "ContactPage.UID" = "UID:";
 
 /* super:Content */

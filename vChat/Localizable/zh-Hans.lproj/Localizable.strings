@@ -15,6 +15,9 @@
 "ContactPage.Nickname" = "昵称：";
 
 /* super:ContactPage */
+"ContactPage.SendingMessage" = "发信息";
+
+/* super:ContactPage */
 "ContactPage.UID" = "UID：";
 
 /* super:Content */

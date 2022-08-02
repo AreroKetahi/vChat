@@ -1,6 +1,6 @@
 
 /* super:ChatPage */
-"ChatPage.Messages" = "輸入信息";
+"ChatPage.Messages" = "輸入消息";
 
 /* super:ChatPage */
 "ChatPage.Send" = "發送";
@@ -15,13 +15,16 @@
 "ContactPage.Nickname" = "暱稱：";
 
 /* super:ContactPage */
+"ContactPage.SendingMessage" = "發消息";
+
+/* super:ContactPage */
 "ContactPage.UID" = "UID：";
 
 /* super:Content */
-"Content.Chat" = "聊天";
+"Content.Chat" = "通信";
 
 /* super:Content */
-"Content.Contacts" = "通訊錄";
+"Content.Contacts" = "通訊薄";
 
 /* super:Content */
-"Content.Preference" = "設置";
+"Content.Preference" = "設定";
