@@ -13,11 +13,14 @@
 		C137669F285CA4E9002C457C /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C137669E285CA4E9002C457C /* Friend.swift */; };
 		C13766A128658D5F002C457C /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13766A028658D5F002C457C /* ChatList.swift */; };
 		C13766A428658E9E002C457C /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13766A328658E9E002C457C /* ChatPage.swift */; };
+		C14231FB289D475900992200 /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14231FA289D475900992200 /* EntryPoint.swift */; };
+		C1423200289D565F00992200 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14231FD289D563C00992200 /* LocalAuthentication.framework */; };
 		C1645225289953E500099386 /* PreferenceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1645224289953E500099386 /* PreferenceList.swift */; };
 		C16537D6289D05D700BCC419 /* MessagePop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16537D5289D05D700BCC419 /* MessagePop.swift */; };
 		C16537D9289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16537D8289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift */; };
 		C16A96EB286DD84200AAE1D7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A96EA286DD84200AAE1D7 /* Message.swift */; };
 		C19D2FEA289D113D005BA946 /* AccentColorPreviewPopSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D2FE9289D113D005BA946 /* AccentColorPreviewPopSent.swift */; };
+		C19D2FED289D299E005BA946 /* LockedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D2FEC289D299E005BA946 /* LockedPage.swift */; };
 		C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EA52859AA6700834874 /* vChatApp.swift */; };
 		C19F4EA82859AA6700834874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EA72859AA6700834874 /* ContentView.swift */; };
 		C19F4EAA2859AA6900834874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F4EA92859AA6900834874 /* Assets.xcassets */; };
@@ -67,11 +70,15 @@
 		C137669E285CA4E9002C457C /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		C13766A028658D5F002C457C /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		C13766A328658E9E002C457C /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
+		C14231FA289D475900992200 /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
+		C14231FD289D563C00992200 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		C14231FF289D564D00992200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C1645224289953E500099386 /* PreferenceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceList.swift; sourceTree = "<group>"; };
 		C16537D5289D05D700BCC419 /* MessagePop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePop.swift; sourceTree = "<group>"; };
 		C16537D8289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColorPreviewPopReceive.swift; sourceTree = "<group>"; };
 		C16A96EA286DD84200AAE1D7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C19D2FE9289D113D005BA946 /* AccentColorPreviewPopSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColorPreviewPopSent.swift; sourceTree = "<group>"; };
+		C19D2FEC289D299E005BA946 /* LockedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedPage.swift; sourceTree = "<group>"; };
 		C19F4EA22859AA6700834874 /* vChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19F4EA52859AA6700834874 /* vChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatApp.swift; sourceTree = "<group>"; };
 		C19F4EA72859AA6700834874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1423200289D565F00992200 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +162,14 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		C14231FC289D563C00992200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C14231FD289D563C00992200 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C16452232899536F00099386 /* Preference */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +196,14 @@
 			path = AccentColorPreviewPop;
 			sourceTree = "<group>";
 		};
+		C19D2FEB289D298E005BA946 /* OtherPages */ = {
+			isa = PBXGroup;
+			children = (
+				C19D2FEC289D299E005BA946 /* LockedPage.swift */,
+			);
+			path = OtherPages;
+			sourceTree = "<group>";
+		};
 		C19F4E992859AA6700834874 = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +211,7 @@
 				C19F4EB52859AA6900834874 /* vChatTests */,
 				C19F4EBF2859AA6900834874 /* vChatUITests */,
 				C19F4EA32859AA6700834874 /* Products */,
+				C14231FC289D563C00992200 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,10 +228,13 @@
 		C19F4EA42859AA6700834874 /* vChat */ = {
 			isa = PBXGroup;
 			children = (
-				C19F4EA72859AA6700834874 /* ContentView.swift */,
+				C14231FF289D564D00992200 /* Info.plist */,
 				C19F4EA52859AA6700834874 /* vChatApp.swift */,
+				C19F4EA72859AA6700834874 /* ContentView.swift */,
+				C14231FA289D475900992200 /* EntryPoint.swift */,
 				C10807D8286EE14300F209A0 /* GlobalLibrary */,
 				C137669D285CA4CD002C457C /* PersonLibrary */,
+				C19D2FEB289D298E005BA946 /* OtherPages */,
 				C13766A228658E91002C457C /* Chat */,
 				C1C76402288905C5003F04E0 /* Contact */,
 				C16452232899536F00099386 /* Preference */,
@@ -412,6 +440,7 @@
 				C19F4EA82859AA6700834874 /* ContentView.swift in Sources */,
 				C13766A128658D5F002C457C /* ChatList.swift in Sources */,
 				C1D1499A286F49B400011F17 /* Extensions.swift in Sources */,
+				C19D2FED289D299E005BA946 /* LockedPage.swift in Sources */,
 				C16537D6289D05D700BCC419 /* MessagePop.swift in Sources */,
 				C1645225289953E500099386 /* PreferenceList.swift in Sources */,
 				C16537D9289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift in Sources */,
@@ -420,6 +449,7 @@
 				C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */,
 				C13766A428658E9E002C457C /* ChatPage.swift in Sources */,
 				C19D2FEA289D113D005BA946 /* AccentColorPreviewPopSent.swift in Sources */,
+				C14231FB289D475900992200 /* EntryPoint.swift in Sources */,
 				C1ABE72E286F274800D0BC39 /* MessagePopSent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -581,7 +611,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -602,6 +632,8 @@
 				DEVELOPMENT_TEAM = LZUKR73W9L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vChat/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -631,6 +663,8 @@
 				DEVELOPMENT_TEAM = LZUKR73W9L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vChat/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

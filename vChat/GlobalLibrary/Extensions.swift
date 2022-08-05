@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 import UIKit
+import CryptoKit
+import CommonCrypto
 
 // UIKit Effect Interface
 struct VisualEffectView: UIViewRepresentable {
@@ -20,5 +22,67 @@ struct VisualEffectView: UIViewRepresentable {
 extension UIApplication {
     func endEditing() {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
+//UIKit get safe area extension
+extension UIApplication {
+    var keyWindow: UIWindow? {
+        connectedScenes
+            .compactMap {
+                $0 as? UIWindowScene
+            }
+            .flatMap {
+                $0.windows
+            }
+            .first {
+                $0.isKeyWindow
+            }
+    }
+}
+
+private struct vcSafeAreaInsetsKey: EnvironmentKey {
+    static var defaultValue: EdgeInsets {
+        UIApplication.shared.keyWindow?.safeAreaInsets.swiftUiInsets ?? EdgeInsets()
+    }
+}
+
+extension EnvironmentValues {
+    var safeAreaInsets: EdgeInsets {
+        self[vcSafeAreaInsetsKey.self]
+    }
+}
+
+private extension UIEdgeInsets {
+    var swiftUiInsets: EdgeInsets {
+        EdgeInsets(top: top, leading: left, bottom: bottom, trailing: right)
+    }
+}
+
+//Data SHA256 package
+extension Data {
+    /// 扩展data支持将字符串进行sha256加密
+    var sha256: String {
+        if #available(iOS 13.0, *) {
+            return hexString(SHA256.hash(data: self).makeIterator())
+        } else {
+            // Fallback on earlier versions
+            var disest = [UInt8](repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
+            self.withUnsafeBytes {
+                bytes in
+                _ = CC_SHA256(bytes.baseAddress,CC_LONG(self.count),&disest)
+            }
+            return hexString(disest.makeIterator())
+        }
+    }
+}
+
+//String SHA256 package
+extension String {
+    var sha256: String {
+        let utf8 = cString(using: .utf8)
+        var digest = [UInt8](repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
+        CC_SHA256(utf8, CC_LONG(utf8!.count - 1), &digest)
+        return digest.reduce("") { $0 + String(format:"%02x", $1) }.uppercased()
     }
 }
