@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContactPage: View {
     var person: Person
+    @Binding var uiColor: Color
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
@@ -46,7 +47,7 @@ struct ContactPage: View {
                 .frame(height: 30)
             
             NavigationLink{
-                ChatPage(friendImageName: person.imageName, selfImageName: selfImageName, objectsVars: VCEnvironmentObjects())
+                ChatPage(friendImageName: person.imageName, selfImageName: selfImageName, objectsVars: VCEnvironmentObjects(), uiColor: $uiColor)
                     .navigationBarTitle(person.remark ?? person.nickname)
             } label: {
                 HStack {
@@ -60,7 +61,7 @@ struct ContactPage: View {
                 .background(
                     RoundedRectangle(cornerRadius: 15, style: .continuous)
                         .frame(height: 50)
-                        .foregroundColor(.blue)
+                        .foregroundColor(uiColor)
                 )
             }
             Spacer()
@@ -71,6 +72,6 @@ struct ContactPage: View {
 
 struct ContactPage_Previews: PreviewProvider {
     static var previews: some View {
-        ContactPage(person: friendList[0])
+        ContactPage(person: friendList[0], uiColor: .constant(.blue))
     }
 }
