@@ -41,7 +41,8 @@ struct PreferenceList: View {
             }
             Divider()
             ColorPicker("PreferenceList.GlobalColorPicker", selection: $uiColor)
-                .padding()
+                .padding(.horizontal)
+            Divider()
             VStack {
                 HStack {
                     Text("PreferenceList.GlobalColorPicker.Preview")
