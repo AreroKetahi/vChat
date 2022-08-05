@@ -11,11 +11,13 @@ struct ChatPage: View {
     var friendImageName: String?
     var selfImageName: String?
     
-    @Environment(\.colorScheme) private var colorScheme
     @State private var inputMessage = ""
     @ObservedObject var objectsVars = VCEnvironmentObjects()
     @FocusState var focusPoint: FocusEnum?
     @State var errorCorrectionSpace = 0.0
+    
+    @Binding var uiColor: Color
+    @Environment(\.colorScheme) private var colorScheme
     
     @Namespace var locationPoint
     @Namespace var ScrollViewReaderTag
@@ -24,9 +26,9 @@ struct ChatPage: View {
             ScrollView {
                 ForEach(objectsVars.messages){ messages in
                     if messages.isReceive {
-                        MessagePopReceive(messages: messages, imageName: friendImageName)
+                        MessagePop(messages: messages, imageName: friendImageName, uiColor: $uiColor)
                     } else {
-                        MessagePopSent(messages: messages, imageName: selfImageName)
+                        MessagePop(messages: messages, imageName: selfImageName, uiColor: $uiColor)
                     }
                 }
                 Spacer().frame(height: 10)
@@ -70,7 +72,7 @@ struct ChatPage: View {
                     .foregroundColor(.white)
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 10,style: .continuous)
-                        .foregroundColor(.blue)
+                        .foregroundColor(uiColor)
                         .frame(height: 40)
                     )
                 } // Message Pop
@@ -97,9 +99,9 @@ struct ChatPage: View {
 struct ChatPage_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ChatPage(friendImageName: "TestImage", selfImageName: selfImageName, objectsVars: VCEnvironmentObjects())
+            ChatPage(friendImageName: "TestImage", selfImageName: selfImageName, objectsVars: VCEnvironmentObjects(), uiColor: .constant(.blue))
                 .environmentObject(VCEnvironmentObjects())
-            ChatPage(friendImageName: "EmptyHeadImage", selfImageName: selfImageName, objectsVars: VCEnvironmentObjects())
+            ChatPage(friendImageName: "EmptyHeadImage", selfImageName: selfImageName, objectsVars: VCEnvironmentObjects(), uiColor: .constant(.blue))
                 .environmentObject(VCEnvironmentObjects())
         }
     }
