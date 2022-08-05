@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import UIKit
+import LocalAuthentication
+import SwiftUI
 
 
 /// A function that can get application language's identifer
@@ -27,9 +30,48 @@ func getLocalLanguageCode() -> String? {
 func isRightToLeftEnable() -> Bool {
     let filpLanguages = ["ar"]
     
-    if filpLanguages.contains(getLocalLanguageCode()!) {
+    if filpLanguages.contains(getLocalLanguageCode() ?? "") {
         return true
     } else {
         return false
     }
+}
+
+// Biometrics identification
+func isBiometricsEnable() -> Bool {
+    let context = LAContext()
+    var error: NSError?
+    
+    if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+        return true
+    } else {
+        return false
+    }
+}
+
+func doBiometricsIdentify(_ reason: String) -> Bool {
+    let context = LAContext()
+    
+    var value = false
+    context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+        // 鉴权完成
+        DispatchQueue.main.async {
+            if success {
+                value = true
+            } else {
+                // 鉴权失败
+            }
+        }
+    }
+    return value
+}
+
+func hexString(_ iterator:Array<UInt8>.Iterator) -> String{
+    return iterator.map{
+        String(format: "%02x", $0)
+    }.joined().uppercased() //字符串转成大写
+}
+
+func emptyAction() {
+    
 }
