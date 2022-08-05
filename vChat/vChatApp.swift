@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct vChatApp: App {
+    @State var isAppLocked = StoragedVars().isAppLocked
+    @State var appState = AppState.lock
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(VCEnvironmentObjects())
+            ContentView(appState: $appState, isAppLocked: $isAppLocked)
         }
     }
+}
+
+enum AppState {
+    case content, lock
 }

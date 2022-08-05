@@ -26,17 +26,56 @@
 /* super:ContactPage */
 "ContactPage.UID" = "UID：";
 
-/* super:Content */
-"Content.Chat" = "通信";
+/* super:Entry */
+"Entry.Chat" = "通信";
 
-/* super:Content */
-"Content.Contacts" = "通訊薄";
+/* super:Entry */
+"Entry.Contacts" = "通訊薄";
 
-/* super:Content */
-"Content.Preference" = "設定";
+/* super:Entry */
+"Entry.NavigationBar.UID" = "UID：";
 
-/* super:ContentView */
-"ContevtView.OriginTitle" = "通信";
+/* super:Entry */
+"Entry.OriginTitle" = "通信";
+
+/* super:Entry */
+"Entry.Preference" = "設定";
+
+/* super:LockedPage */
+"LockedPage.AppLocked" = "vChat已鎖定。";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.FaceID" = "你的iPhone支持面容ID，但是沒有在設置中啟用。";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.Title" = "為什麼？";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.TouchID" = "您的 iPhone 支持觸控ID，但您沒有在設置中啓用它。 或者您的 iPhone是 iPhone 5 或更低版本，所以不支持觸控ID。";
+
+/* super:LockedPage */
+"LockedPage.CanNotUseBio%@" = "為什麼我不能用%@？";
+
+/* super:LockedPage */
+"LockedPage.EnterPassword" = "請輸入密碼";
+
+/* super:LockedPage */
+"LockedPage.FaceID" = "面容ID";
+
+/* super:LockedPage */
+"LockedPage.PasswordError" = "密碼錯誤！";
+
+/* super:LockedPage */
+"LockedPage.PasswordLess" = "密碼至少要有八位";
+
+/* super:LockedPage */
+"LockedPage.PasswordPlaceholder" = "輸入密碼...";
+
+/* super:LockedPage */
+"LockedPage.UnlockText %@" = "使用%@解鎖";
+
+/* super:LockedPage */
+"LockedPgae.TouchID" = "觸控ID";
 
 /* super:PreferenceList */
 "PreferenceList.GlobalColorPicker" = "重點高亮色";

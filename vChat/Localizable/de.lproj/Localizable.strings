@@ -26,17 +26,56 @@
 /* super:ContactPage */
 "ContactPage.UID" = "UID:";
 
-/* super:Content */
-"Content.Chat" = "Geplauder";
+/* super:Entry */
+"Entry.Chat" = "Geplauder";
 
-/* super:Content */
-"Content.Contacts" = "Adressen";
+/* super:Entry */
+"Entry.Contacts" = "Adressen";
+
+/* super:Entry */
+"Entry.NavigationBar.UID" = "UID:";
+
+/* super:Entry */
+"Entry.OriginTitle" = "Geplauder";
 
 /* super:Contact */
-"Content.Preference" = "Aufbauen";
+"Entry.Preference" = "Aufbauen";
 
-/* super:ContentView */
-"ContevtView.OriginTitle" = "Geplauder";
+/* super:LockedPage */
+"LockedPage.AppLocked" = "vChat ist gesperrt.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.FaceID" = "Dein iPhone unterstützt Face ID, aber du hast es nicht in den Einstellungen aktiviert.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.Title" = "Wieso den?";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.TouchID" = "Ihr iPhone unterstützt Touch ID, aber Sie haben es in den Einstellungen nicht aktiviert. Oder Ihr iPhone ist iPhone 5 oder niedriger, sodass Touch ID nicht unterstützt wird.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUseBio%@" = "Warum kann ich %@ nicht verwenden?";
+
+/* super:LockedPage */
+"LockedPage.EnterPassword" = "Bitte Passwort eingeben";
+
+/* super:LockedPage */
+"LockedPage.FaceID" = "Face ID";
+
+/* super:LockedPage */
+"LockedPage.PasswordError" = "Falsches Passwort!";
+
+/* super:LockedPage */
+"LockedPage.PasswordLess" = "Das Passwort muss mindestens acht Zeichen lang sein";
+
+/* super:LockedPage */
+"LockedPage.PasswordPlaceholder" = "passwort eingeben...";
+
+/* super:LockedPage */
+"LockedPage.UnlockText %@" = "Entsperren mit %@";
+
+/* super:LockedPage */
+"LockedPgae.TouchID" = "Touch ID";
 
 /* super:PreferenceList */
 "PreferenceList.GlobalColorPicker" = "Akzentfarbe";

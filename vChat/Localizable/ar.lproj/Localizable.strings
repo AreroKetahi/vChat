@@ -26,17 +26,56 @@
 /* super:ContactPage */
 "ContactPage.UID" = "المعرف الفريد:";
 
-/* super:Content */
-"Content.Chat" = "للدردشة معه";
+/* super:Entry */
+"Entry.Chat" = "للدردشة معه";
 
-/* super:Content */
-"Content.Contacts" = "دليل العناوين";
+/* super:Entry */
+"Entry.Contacts" = "دليل العناوين";
 
-/* super:Content */
-"Content.Preference" = "اقامة";
+/* super:Entry */
+"Entry.NavigationBar.UID" = "المعرف الفريد:";
 
-/* super:ContentView */
-"ContevtView.OriginTitle" = "للدردشة معه";
+/* super:Entry */
+"Entry.OriginTitle" = "للدردشة معه";
+
+/* super:Entry */
+"Entry.Preference" = "اقامة";
+
+/* super:LockedPage */
+"LockedPage.AppLocked" = "تم قفل vChat.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.FaceID" = "يدعم iPhone الخاص بك Face ID ، لكنك لم تقم بتمكينه في الإعدادات.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.Title" = "لماذا ا؟";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.TouchID" = "يدعم iPhone الخاص بك معرف اللمس ولكنك لم تقم بتمكينه في الإعدادات. أو أن iPhone الخاص بك هو iPhone 5 أو أقل ، لذا فإن معرف اللمس غير مدعوم.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUseBio%@" = "لماذا لا يمكنني استخدام٪ @؟";
+
+/* super:LockedPage */
+"LockedPage.EnterPassword" = "الرجاء إدخال كلمة المرور";
+
+/* super:LockedPage */
+"LockedPage.FaceID" = "معرف الوجه";
+
+/* super:LockedPage */
+"LockedPage.PasswordError" = "كلمة مرور خاطئة!";
+
+/* super:LockedPage */
+"LockedPage.PasswordLess" = "يجب أن تتكون كلمة المرور من ثمانية أحرف على الأقل";
+
+/* super:LockedPage */
+"LockedPage.PasswordPlaceholder" = "أدخل كلمة المرور ...";
+
+/* super:LockedPage */
+"LockedPage.UnlockText %@" = "فتح مع %@";
+
+/* super:LockedPage */
+"LockedPgae.TouchID" = "معرف اللمس";
 
 /* super:PreferenceList */
 "PreferenceList.GlobalColorPicker" = "لون التمييز";

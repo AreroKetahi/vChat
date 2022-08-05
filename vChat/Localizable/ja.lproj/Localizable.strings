@@ -26,17 +26,56 @@
 /* super:ContactPage */
 "ContactPage.UID" = "UID:";
 
-/* super:Content */
-"Content.Chat" = "チャット";
+/* super:Entry */
+"Entry.Chat" = "チャット";
 
-/* super:Content */
-"Content.Contacts" = "住所録";
+/* super:Entry */
+"Entry.Contacts" = "住所録";
+
+/* super:Entry */
+"Entry.NavigationBar.UID" = "UID:";
+
+/* super:Entry */
+"Entry.OriginTitle" = "チャット";
 
 /* super:Contact */
-"Content.Preference" = "環境設定";
+"Entry.Preference" = "環境設定";
 
-/* super:ContentView */
-"ContevtView.OriginTitle" = "チャット";
+/* super:LockedPage */
+"LockedPage.AppLocked" = "vChatはロックされています。";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.FaceID" = "iPhoneはFaceIDをサポートしていますが、設定で有効にしていません。";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.Title" = "なんで？";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.TouchID" = "iPhoneはタッチIDをサポートしていますが、設定で有効にしていません。 iPhone 5以下であるため、iPhoneがタッチIDをサポートしない場合があります。";
+
+/* super:LockedPage */
+"LockedPage.CanNotUseBio%@" = "％@を使用できないのはなぜですか？";
+
+/* super:LockedPage */
+"LockedPage.EnterPassword" = "パスワードを入力してください";
+
+/* super:LockedPage */
+"LockedPage.FaceID" = "Face ID";
+
+/* super:LockedPage */
+"LockedPage.PasswordError" = "間違ったパスワード！";
+
+/* super:LockedPage */
+"LockedPage.PasswordLess" = "パスワードは8文字以上である必要があります";
+
+/* super:LockedPage */
+"LockedPage.PasswordPlaceholder" = "パスワードを入力する...";
+
+/* super:LockedPage */
+"LockedPage.UnlockText %@" = "％@でロックを解除します";
+
+/* super:LockedPage */
+"LockedPgae.TouchID" = "タッチID";
 
 /* super:PreferenceList */
 "PreferenceList.GlobalColorPicker" = "アクセントの色";

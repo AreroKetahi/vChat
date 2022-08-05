@@ -26,17 +26,59 @@
 /* super:ContactPage */
 "ContactPage.UID" = "UID:";
 
-/* super:Content */
-"Content.Chat" = "Nоболтать";
+/* super:Entry */
+"Entry.Chat" = "Nоболтать";
 
-/* super:Content */
-"Content.Contacts" = "Aдресная Kнига";
+/* super:Entry */
+"Entry.Contacts" = "Aдресная Kнига";
+
+/* super:Entry */
+"Entry.NavigationBar.UID" = "UID:";
+
+/* super:Entry */
+"Entry.OriginTitle" = "Nоболтать";
 
 /* super:Contact */
-"Content.Preference" = "Настройки";
+"Entry.Preference" = "Настройки";
 
-/* super:ContentView */
-"ContevtView.OriginTitle" = "Nоболтать";
+/* super:LockedPage */
+"LockedPage.AppLocked" = "vChat заблокирован.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.FaceID" = "Ваш iPhone поддерживает Face ID, но вы не включили его в настройках.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.Title" = "Почему?";
+
+/* super:LockedPage */
+"LockedPage.CanNotUse.TouchID" = "Ваш iPhone поддерживает Touch ID, но вы не включили его в настройках. Ваш iPhone может не поддерживать Touch ID, потому что это iPhone 5 или более ранней версии.";
+
+/* super:LockedPage */
+"LockedPage.CanNotUseBio%@" = "Почему я не могу использовать %@?";
+
+/* super:LockedPage */
+"LockedPage.EnterPassword" = "Пожалуйста введите пароль";
+
+/* super:LockedPage */
+"LockedPage.FaceID" = "Face ID";
+
+/* super:LockedPage */
+"LockedPage.PasswordError" = "Hеправильный пароль!";
+
+/* super:LockedPage */
+"LockedPage.PasswordLess" = "Пароль должен быть не менее восьми символов";
+
+/* super:LockedPage */
+"LockedPage.PasswordPlaceholder" = "введите пароль...";
+
+/* super:LockedPage */
+"LockedPage.Unlock" = "Pазблокировать";
+
+/* super:LockedPage */
+"LockedPage.UnlockText %@" = "Используйте %@, чтобы pазблокировать";
+
+/* super:LockedPage */
+"LockedPgae.TouchID" = "Touch ID";
 
 /* super:PreferenceList */
 "PreferenceList.GlobalColorPicker" = "Aкцентный Цвет";
