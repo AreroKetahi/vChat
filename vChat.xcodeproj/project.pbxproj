@@ -13,7 +13,11 @@
 		C137669F285CA4E9002C457C /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C137669E285CA4E9002C457C /* Friend.swift */; };
 		C13766A128658D5F002C457C /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13766A028658D5F002C457C /* ChatList.swift */; };
 		C13766A428658E9E002C457C /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13766A328658E9E002C457C /* ChatPage.swift */; };
+		C1645225289953E500099386 /* PreferenceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1645224289953E500099386 /* PreferenceList.swift */; };
+		C16537D6289D05D700BCC419 /* MessagePop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16537D5289D05D700BCC419 /* MessagePop.swift */; };
+		C16537D9289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16537D8289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift */; };
 		C16A96EB286DD84200AAE1D7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16A96EA286DD84200AAE1D7 /* Message.swift */; };
+		C19D2FEA289D113D005BA946 /* AccentColorPreviewPopSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D2FE9289D113D005BA946 /* AccentColorPreviewPopSent.swift */; };
 		C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EA52859AA6700834874 /* vChatApp.swift */; };
 		C19F4EA82859AA6700834874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EA72859AA6700834874 /* ContentView.swift */; };
 		C19F4EAA2859AA6900834874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F4EA92859AA6900834874 /* Assets.xcassets */; };
@@ -63,7 +67,11 @@
 		C137669E285CA4E9002C457C /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		C13766A028658D5F002C457C /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		C13766A328658E9E002C457C /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
+		C1645224289953E500099386 /* PreferenceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceList.swift; sourceTree = "<group>"; };
+		C16537D5289D05D700BCC419 /* MessagePop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePop.swift; sourceTree = "<group>"; };
+		C16537D8289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColorPreviewPopReceive.swift; sourceTree = "<group>"; };
 		C16A96EA286DD84200AAE1D7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C19D2FE9289D113D005BA946 /* AccentColorPreviewPopSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColorPreviewPopSent.swift; sourceTree = "<group>"; };
 		C19F4EA22859AA6700834874 /* vChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19F4EA52859AA6700834874 /* vChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatApp.swift; sourceTree = "<group>"; };
 		C19F4EA72859AA6700834874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +154,32 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		C16452232899536F00099386 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				C1645224289953E500099386 /* PreferenceList.swift */,
+				C16537D2289CFA9D00BCC419 /* Details */,
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		C16537D2289CFA9D00BCC419 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				C16537D7289D0C8B00BCC419 /* AccentColorPreviewPop */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		C16537D7289D0C8B00BCC419 /* AccentColorPreviewPop */ = {
+			isa = PBXGroup;
+			children = (
+				C16537D8289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift */,
+				C19D2FE9289D113D005BA946 /* AccentColorPreviewPopSent.swift */,
+			);
+			path = AccentColorPreviewPop;
+			sourceTree = "<group>";
+		};
 		C19F4E992859AA6700834874 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +209,7 @@
 				C137669D285CA4CD002C457C /* PersonLibrary */,
 				C13766A228658E91002C457C /* Chat */,
 				C1C76402288905C5003F04E0 /* Contact */,
+				C16452232899536F00099386 /* Preference */,
 				C119345D2893D63500EACC1C /* Localizable */,
 				C1C763FE2889034F003F04E0 /* GlobalVars.swift */,
 				C19F4EA92859AA6900834874 /* Assets.xcassets */,
@@ -211,6 +246,7 @@
 		C1ABE72A286F25E600D0BC39 /* MessagePops */ = {
 			isa = PBXGroup;
 			children = (
+				C16537D5289D05D700BCC419 /* MessagePop.swift */,
 				C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */,
 				C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */,
 			);
@@ -376,10 +412,14 @@
 				C19F4EA82859AA6700834874 /* ContentView.swift in Sources */,
 				C13766A128658D5F002C457C /* ChatList.swift in Sources */,
 				C1D1499A286F49B400011F17 /* Extensions.swift in Sources */,
+				C16537D6289D05D700BCC419 /* MessagePop.swift in Sources */,
+				C1645225289953E500099386 /* PreferenceList.swift in Sources */,
+				C16537D9289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift in Sources */,
 				C1C7640628893FD6003F04E0 /* ContactPage.swift in Sources */,
 				C16A96EB286DD84200AAE1D7 /* Message.swift in Sources */,
 				C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */,
 				C13766A428658E9E002C457C /* ChatPage.swift in Sources */,
+				C19D2FEA289D113D005BA946 /* AccentColorPreviewPopSent.swift in Sources */,
 				C1ABE72E286F274800D0BC39 /* MessagePopSent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
