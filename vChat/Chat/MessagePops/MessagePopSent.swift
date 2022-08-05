@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct MessagePopSent: View {
-    var messages: VCMessage
+    var messages: String
     var imageName: String?
+    @Binding var uiColor: Color
     var body: some View {
         if !isRightToLeftEnable() {
             HStack {
                 Spacer()
-                Text(messages.messageContent)
+                Text(messages)
                     .foregroundColor(.white)
                     .padding()
                     .background(
@@ -22,11 +23,11 @@ struct MessagePopSent: View {
                             cornerRadius: 10,
                             style: .continuous
                         )
-                        .foregroundColor(.blue)
+                        .foregroundColor(uiColor)
                         .frame(height:45)
                     )
                     .frame(height: 49)
-                    .shadow(color: Color(.displayP3, red: 0/255, green: 122/255, blue: 255/255, opacity: 0.5),
+                    .shadow(color: uiColor.opacity(0.5),
                             radius: 5, x: 0, y: 0)
                 PersonHeadImage(imageName: imageName != nil ? imageName! : "EmptyHeadImage")
                 Spacer().frame(width:20)
@@ -35,7 +36,7 @@ struct MessagePopSent: View {
             HStack {
                 Spacer().frame(width:20)
                 PersonHeadImage(imageName: imageName != nil ? imageName! : "EmptyHeadImage")
-                Text(messages.messageContent)
+                Text(messages)
                     .foregroundColor(.white)
                     .padding()
                     .background(
@@ -43,11 +44,11 @@ struct MessagePopSent: View {
                             cornerRadius: 10,
                             style: .continuous
                         )
-                        .foregroundColor(.blue)
+                        .foregroundColor(uiColor)
                         .frame(height:45)
                     )
                     .frame(height: 49)
-                    .shadow(color: Color(.displayP3, red: 0/255, green: 122/255, blue: 255/255, opacity: 0.5),
+                    .shadow(color: uiColor.opacity(0.5),
                             radius: 5, x: 0, y: 0)
                 Spacer()
             } // Self Messages RTL
@@ -58,8 +59,8 @@ struct MessagePopSent: View {
 struct MessagePopSent_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MessagePopSent(messages: VCEnvironmentObjects().messages[1], imageName: selfImageName)
-            MessagePopSent(messages: VCEnvironmentObjects().messages[1], imageName: selfImageName)
+            MessagePopSent(messages: VCEnvironmentObjects().messages[1].messageContent, imageName: selfImageName, uiColor: .constant(.blue))
+            MessagePopSent(messages: VCEnvironmentObjects().messages[1].messageContent, imageName: selfImageName, uiColor: .constant(.blue))
                 .environment(\.layoutDirection, .rightToLeft)
         }
         .previewLayout(.fixed(width: 300, height: 60))
