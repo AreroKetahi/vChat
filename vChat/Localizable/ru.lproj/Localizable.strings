@@ -1,9 +1,15 @@
 
+/* super:ChatList */
+"ChatList.Chat" = "Nоболтать";
+
 /* super:ChatPage */
 "ChatPage.Messages" = "Введите информацию";
 
 /* super:ChatPage */
 "ChatPage.Send" = "Отправить";
+
+/* super:ContactList */
+"ContactList.Contacts" = "Aдресная Kнига";
 
 /* super:ContactList */
 "ContactList.Details" = "Более";
@@ -21,10 +27,28 @@
 "ContactPage.UID" = "UID:";
 
 /* super:Content */
-"Content.Chat" = "поболтать";
+"Content.Chat" = "Nоболтать";
 
 /* super:Content */
-"Content.Contacts" = "адресная книга";
+"Content.Contacts" = "Aдресная Kнига";
 
 /* super:Contact */
 "Content.Preference" = "Настройки";
+
+/* super:ContentView */
+"ContevtView.OriginTitle" = "Nоболтать";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker" = "Aкцентный Цвет";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview" = "Просмотр Aкцентного Цвета";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Receive" = "Привет, мир!";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Sent" = "Привет!";
+
+/* super:PreferenceList */
+"PreferenceList.Preference" = "Настройки";

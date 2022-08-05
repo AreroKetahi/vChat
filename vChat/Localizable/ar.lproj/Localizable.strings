@@ -1,9 +1,15 @@
 
+/* super:ChatList */
+"ChatList.Chat" = "للدردشة معه";
+
 /* super:ChatPage */
 "ChatPage.Messages" = "أدخل المعلومات";
 
 /* super:ChatPage */
 "ChatPage.Send" = "إرسال";
+
+/* super:ContactList */
+"ContactList.Contacts" = "دليل العناوين";
 
 /* super:ContactList */
 "ContactList.Details" = "معلومات اكثر";
@@ -28,3 +34,21 @@
 
 /* super:Content */
 "Content.Preference" = "اقامة";
+
+/* super:ContentView */
+"ContevtView.OriginTitle" = "للدردشة معه";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker" = "لون التمييز";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview" = "معاينة لون التمييز";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Receive" = "مرحبا بالعالم!";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Sent" = "مرحبًا!";
+
+/* super:PreferenceList */
+"PreferenceList.Preference" = "اقامة";

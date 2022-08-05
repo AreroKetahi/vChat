@@ -1,9 +1,15 @@
 
+/* super:ChatList */
+"ChatList.Chat" = "通信";
+
 /* super:ChatPage */
 "ChatPage.Messages" = "輸入消息";
 
 /* super:ChatPage */
 "ChatPage.Send" = "發送";
+
+/* super:ContactList */
+"ContactList.Contacts" = "通訊薄";
 
 /* super:ContactList */
 "ContactList.Details" = "更多信息";
@@ -28,3 +34,21 @@
 
 /* super:Content */
 "Content.Preference" = "設定";
+
+/* super:ContentView */
+"ContevtView.OriginTitle" = "通信";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker" = "重點高亮色";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview" = "重點高亮色預覽";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Receive" = "世界你好！";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Sent" = "你好！";
+
+/* super:PreferenceList */
+"PreferenceList.Preference" = "設定";

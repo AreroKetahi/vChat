@@ -1,9 +1,15 @@
 
+/* super:ChatList */
+"ChatList.Chat" = "聊天";
+
 /* super:ChatPage */
 "ChatPage.Messages" = "输入信息";
 
 /* super:ChatPage */
 "ChatPage.Send" = "发送";
+
+/* super:ContactList */
+"ContactList.Contacts" = "通讯录";
 
 /* super:ContactList */
 "ContactList.Details" = "更多信息";
@@ -28,3 +34,21 @@
 
 /* super:Content */
 "Content.Preference" = "设置";
+
+/* super:ContentView */
+"ContevtView.OriginTitle" = "聊天";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker" = "强调色";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview" = "强调色预览";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Receive" = "你好世界！";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Sent" = "你好！";
+
+/* super:PreferenceList */
+"PreferenceList.Preference" = "设置";

@@ -1,9 +1,15 @@
 
+/* super:ChatList */
+"ChatList.Chat" = "Chat";
+
 /* super:ChatPage */
 "ChatPage.Messages" = "Messages";
 
 /* super:ChatPage */
 "ChatPage.Send" = "Send";
+
+/* super:ContactList */
+"ContactList.Contacts" = "Contacts";
 
 /* super:ContactList */
 "ContactList.Details" = "Details";
@@ -28,3 +34,21 @@
 
 /* super:Contact */
 "Content.Preference" = "Preference";
+
+/* super:ContentView */
+"ContevtView.OriginTitle" = "Chat";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker" = "Accent Color";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview" = "Accent Color Preview";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Receive" = "Hello World!";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Sent" = "Hello!";
+
+/* super:PreferenceList */
+"PreferenceList.Preference" = "Preference";

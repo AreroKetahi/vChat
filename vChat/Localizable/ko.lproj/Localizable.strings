@@ -1,9 +1,15 @@
 
+/* super:ChatList */
+"ChatList.Chat" = "채팅";
+
 /* super:ChatPage */
 "ChatPage.Messages" = "정보 입력";
 
 /* super:ChatPage */
 "ChatPage.Send" = "보내다";
+
+/* super:ContactList */
+"ContactList.Contacts" = "주소록";
 
 /* super:ContactList */
 "ContactList.Details" = "추가 정보";
@@ -28,3 +34,21 @@
 
 /* super:Contact */
 "Content.Preference" = "설정";
+
+/* super:ContentView */
+"ContevtView.OriginTitle" = "채팅";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker" = "악센트 색상";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview" = "강조 색상 미리보기";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Receive" = "안녕하십니까월드!";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Sent" = "안녕하십니까!";
+
+/* super:PreferenceList */
+"PreferenceList.Preference" = "설정";

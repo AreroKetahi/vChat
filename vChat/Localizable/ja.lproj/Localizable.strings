@@ -1,9 +1,15 @@
 
+/* super:ChatList */
+"ChatList.Chat" = "チャット";
+
 /* super:ChatPage */
 "ChatPage.Messages" = "情報";
 
 /* super:ChatPage */
 "ChatPage.Send" = "送信";
+
+/* super:ContactList */
+"ContactList.Contacts" = "住所録";
 
 /* super:ContactList */
 "ContactList.Details" = "詳しくは";
@@ -28,3 +34,21 @@
 
 /* super:Contact */
 "Content.Preference" = "環境設定";
+
+/* super:ContentView */
+"ContevtView.OriginTitle" = "チャット";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker" = "アクセントの色";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview" = "アクセントカラープレビュー";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Receive" = "こんにちは世界！";
+
+/* super:PreferenceList */
+"PreferenceList.GlobalColorPicker.Preview.Sent" = "こんにちは！";
+
+/* super:PreferenceList */
+"PreferenceList.Preference" = "環境設定";
