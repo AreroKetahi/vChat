@@ -93,7 +93,7 @@
 "PreferenceList.Preference" = "设置";
 
 /* super:SetUpAppLock */
-"SetUpAppLock.Cancal" = "取消";
+"SetUpAppLock.Cancel" = "取消";
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Next" = "下一步";

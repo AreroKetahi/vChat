@@ -93,7 +93,7 @@
 "PreferenceList.Preference" = "Aufbauen";
 
 /* super:SetUpAppLock */
-"SetUpAppLock.Cancal" = "";
+"SetUpAppLock.Cancel" = "";
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Next" = "";
