@@ -44,6 +44,7 @@ struct LockedPage: View {
                             if  password.sha256 == StoragedVars().localPassword {
                                 withAnimation(.easeInOut) {
                                     isAppLocked = false
+                                    UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
                                 }
                             } else {
                                 autoPasswordTextField_isError = true
@@ -135,18 +136,23 @@ struct LockedPage: View {
     }
     
     private var autoPasswordTextField: String {
-        if !autoPasswordTextField_isError {
-            if password == "" {
+        
+        if password == "" {
+            DispatchQueue.main.async {
                 autoPasswordTextField_isError = false
-                return NSLocalizedString("LockedPage.EnterPassword", comment: "super:LockedPage")
-            } else if password.count < 8 {
-                autoPasswordTextField_isError = false
-                return NSLocalizedString("LockedPage.PasswordLess", comment: "super:LockedPage")
-            } else {
-                return ""
             }
+            return NSLocalizedString("LockedPage.EnterPassword", comment: "super:LockedPage")
+        } else if password.count < 8 {
+            DispatchQueue.main.async {
+                autoPasswordTextField_isError = false
+            }
+            return NSLocalizedString("LockedPage.PasswordLess", comment: "super:LockedPage")
         } else {
-            return NSLocalizedString("LockedPage.PasswordError", comment: "super:LockedPage")
+            if !autoPasswordTextField_isError {
+                return ""
+            } else {
+                return NSLocalizedString("LockedPage.PasswordError", comment: "super:LockedPage")
+            }
         }
     }
     
@@ -177,6 +183,6 @@ struct LockedPage: View {
 
 struct LockedPage_Previews: PreviewProvider {
     static var previews: some View {
-        LockedPage(DEBUG_BIOLOGIN: false, isAppLocked: .constant(true))
+        LockedPage(DEBUG_BIOLOGIN: true, isAppLocked: .constant(true))
     }
 }

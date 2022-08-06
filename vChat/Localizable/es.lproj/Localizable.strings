@@ -26,9 +26,6 @@
 /* super:ContactPage */
 "ContactPage.UID" = "UID:";
 
-/* super:ContentView */
-"ContevtView.OriginTitle" = "Charlar";
-
 /* super:Entry */
 "Entry.Chat" = "Charlar";
 
@@ -69,7 +66,7 @@
 "LockedPage.PasswordError" = "¡Contraseña incorrecta!";
 
 /* super:LockedPage */
-"LockedPage.PasswordLess" = "";
+"LockedPage.PasswordLess" = "La contraseña debe tener al menos ocho caracteres";
 
 /* super:LockedPage */
 "LockedPage.PasswordPlaceholder" = "introducir la contraseña...";
@@ -94,3 +91,57 @@
 
 /* super:PreferenceList */
 "PreferenceList.Preference" = "Preferencias";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Cancal" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Next" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.CertificatePlaceHolder" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.Match" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.NoCertificate" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.NoMatch" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.SetPassword" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.Title" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.Authenticate%@" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.Escape" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.SubTitle%@" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Close" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Finish" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Subtitle" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title.2" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title.3" = "";
+
+/* super:SetUpAppLock */
+"SetupAppLock.Secondary.Title" = "";

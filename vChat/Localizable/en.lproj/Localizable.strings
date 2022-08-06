@@ -35,9 +35,6 @@
 /* super:Entry */
 "Entry.NavigationBar.UID" = "UID:";
 
-/*  */
-"Entry.OriginTitle" = "Chat";
-
 /* super:Entry */
 "Entry.OriginTitle" = "Chat";
 
@@ -94,3 +91,57 @@
 
 /* super:PreferenceList */
 "PreferenceList.Preference" = "Preference";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Cancal" = "Cancal";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Next" = "Next Step";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.CertificatePlaceHolder" = "certificate...";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.Match" = "Password matched";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.NoCertificate" = "Please authenticate password";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.NoMatch" = "Password not match";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.SetPassword" = "Please set a password";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.Title" = "First Step";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.Authenticate%@" = "Authenticate %@";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.Escape" = "Set it later...";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.SubTitle%@" = "Enable %@";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Close" = "Close this page";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Finish" = "Finish!";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Subtitle" = "App Lock is enable.";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title" = "Set up App Lock";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title.2" = "Two steps in total";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title.3" = "Three steps in total";
+
+/* super:SetUpAppLock */
+"SetupAppLock.Secondary.Title" = "Second Step";

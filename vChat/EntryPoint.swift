@@ -12,6 +12,7 @@ struct EntryPoint: View {
     @State private var navigationTitle = "ContactList.OriginTitle"
     @State private var uiColor = StoragedVars().uiColor
     @Binding var isAppLocked: Bool
+    @Binding var isAppLockEnable: Bool
     var body: some View {
         NavigationView {
             TabView(selection: $selection) {
@@ -27,7 +28,12 @@ struct EntryPoint: View {
                     }
                     .tag(1)
                 
-                PreferenceList(thisSelf: selfPerson, uiColor: $uiColor, navigationTitle: $navigationTitle)
+                PreferenceList(
+                    thisSelf: selfPerson,
+                    uiColor: $uiColor,
+                    isAppLockEnable: $isAppLockEnable,
+                    navigationTitle: $navigationTitle
+                )
                     .tabItem {
                         Label("Entry.Preference", systemImage: "gear")
                     }
@@ -37,26 +43,29 @@ struct EntryPoint: View {
             .navigationTitle(navigationTitle)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(leading: HStack{
-                Button {
-                    withAnimation(.easeInOut) {
-                        isAppLocked = true
+                if isAppLockEnable {
+                    Button {
+                        withAnimation(.easeInOut) {
+                            isAppLocked = true
+                            UINotificationFeedbackGenerator().notificationOccurred(.warning)
+                        }
+                    } label: {
+                        Image(systemName: "lock.fill")
+                            .foregroundColor(.gray)
                     }
-                } label: {
-                    Image(systemName: "lock.fill")
-                        .foregroundColor(.gray)
                 }
-            })
+            }) // App Lock Button
             .navigationBarItems(trailing: HStack{
                 Text(String(selfPerson.uid))
                     .font(.system(size: 18, weight: .ultraLight, design: .monospaced))
                     .foregroundColor(.gray)
-            })
+            }) // UID
         }
     }
 }
 
 struct EntryPoint_Previews: PreviewProvider {
     static var previews: some View {
-        EntryPoint(isAppLocked: .constant(false))
+        EntryPoint(isAppLocked: .constant(false), isAppLockEnable: .constant(true))
     }
 }

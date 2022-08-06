@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct PreferenceList: View {
     var thisSelf: Person
-    @Environment(\.colorScheme) private var colorScheme
     @Binding var uiColor: Color
+    @Binding var isAppLockEnable: Bool
     @Binding var navigationTitle: String
+
+    @State private var isAppLockChangeSheetPresent = false
+    @State private var appLockToogleLock = false
+    @State private var isAppLockChangePasswordBoxPresent = false
+    
+    @State private var autoPasswordTextField_isError = false
+    @State private var appLockPrimaryDismissLock = false
+    
+    @State private var password = ""
+    @State private var passwordCertificate = ""
+    @State private var isSetUpAppLockPresent = false
+    @State private var isBioLoginAuthPass = false
+    
+    @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.safeAreaInsets) private var safeAreaInsets
     var body: some View {
         ScrollView {
             Spacer()
@@ -40,61 +56,44 @@ struct PreferenceList: View {
                 Spacer()
             }
             Divider()
-            ColorPicker("PreferenceList.GlobalColorPicker", selection: $uiColor)
-                .padding(.horizontal)
-            Divider()
-            VStack {
-                HStack {
-                    Text("PreferenceList.GlobalColorPicker.Preview")
-                        .font(.system(size: 15, weight: .light, design: .default))
-                    Spacer()
-                }
-                .padding([.leading, .bottom, .trailing])
-                HStack {
-                    PersonLabelComponent(imageName: selfImageName, nickname: thisSelf.remark ?? thisSelf.nickname)
-                    .overlay(Circle()
-                        .frame(width: 12, height: 12)
-                        .position(x: 47, y: 3)
-                        .foregroundColor(uiColor)
-                        .shadow(color: uiColor, radius: 2)
-                    )
-                    .padding()
-                    Spacer()
-                    Image(systemName: isRightToLeftEnable() ? "chevron.left" : "chevron.right")
-                        .foregroundColor(.gray)
-                    Spacer()
-                        .frame(width: 20)
-                } // Message Notification
-                .background(
-                    RoundedRectangle(cornerRadius: 25, style: .continuous)
-                        .foregroundColor(
-                            colorScheme == .light ?
-                            Color(red: 0.95, green: 0.95, blue: 0.95) :
-                            Color(red: 0.15, green: 0.15, blue: 0.15)
-                        )
-                )
-                Spacer().frame(height: 10)
-                VStack {
-                    Spacer()
-                        .frame(height: 2)
-                    AccentColorPreviewPopReceive()
-                        .padding(.top)
-                    AccentColorPreviewPopSent(imageName: selfImageName, uiColor: $uiColor)
-                        .padding(.bottom)
-                    Spacer()
-                        .frame(height: 2)
-                } // Message Pop
-                .background(
-                    RoundedRectangle(cornerRadius: 25, style: .continuous)
-                        .foregroundColor(
-                            colorScheme == .light ?
-                            Color(red: 0.95, green: 0.95, blue: 0.95) :
-                            Color(red: 0.15, green: 0.15, blue: 0.15)
-                        )
-                )
-            } // Accent Color Preview
+            AccentColor(uiColor: $uiColor, thisSelf: thisSelf)// Accent Color
             Divider()
                 .padding(.vertical)
+            Toggle(isOn: $isAppLockEnable) {
+                Text("App Lock")
+            }
+            .onChange(of: isAppLockEnable) {_ in
+                if isAppLockChangeSheetPresent || appLockToogleLock {
+                    isAppLockChangeSheetPresent = false
+                } else if !appLockToogleLock {
+                    appLockToogleLock = true
+                    isAppLockChangeSheetPresent = true
+                }
+            }
+            .padding(.horizontal)
+            .sheet(isPresented: $isAppLockChangeSheetPresent, onDismiss: didAppLockChangeSheetDissmiss) {
+                if isAppLockEnable {
+                   SetUpAppLock(
+                    isSetUpAppLockPresent: $isSetUpAppLockPresent,
+                    appLockPrimaryDismissLock: $appLockPrimaryDismissLock,
+                    isAppLockEnable: $isAppLockEnable,
+                    appLockToogleLock: $appLockToogleLock,
+                    password: $password,
+                    autoPasswordTextField_isError: $autoPasswordTextField_isError,
+                    passwordCertificate: $passwordCertificate,
+                    isBioLoginAuthPass: $isBioLoginAuthPass,
+                    isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent
+                   )
+                } else {
+                     CloseAppLock(
+                        isAppLockChangePasswordBoxPresent: $isAppLockChangePasswordBoxPresent,
+                        isAppLockEnable: $isAppLockEnable,
+                        appLockToogleLock: $appLockToogleLock,
+                        isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent,
+                        appLockPrimaryDismissLock: $appLockPrimaryDismissLock
+                     )
+                }
+            }
             Spacer()
         }
         .padding()
@@ -102,10 +101,64 @@ struct PreferenceList: View {
             navigationTitle = NSLocalizedString("PreferenceList.Preference", comment:"super:PreferenceList")
         }
     }
+    
+    private func didAppLockChangeSheetDissmiss() {
+        if !appLockPrimaryDismissLock {
+            isAppLockEnable.toggle()
+            DispatchQueue.main.async {
+                appLockPrimaryDismissLock = false
+            }
+        }
+        DispatchQueue.main.async {
+            appLockToogleLock = false
+        }
+    }
+    
+    private var autoPasswordTextField: String {
+        
+        if password == "" {
+            DispatchQueue.main.async {
+                autoPasswordTextField_isError = false
+            }
+            return NSLocalizedString("LockedPage.EnterPassword", comment: "super:LockedPage")
+        } else if password.count < 8 {
+            DispatchQueue.main.async {
+                autoPasswordTextField_isError = false
+            }
+            return NSLocalizedString("LockedPage.PasswordLess", comment: "super:LockedPage")
+        } else {
+            if !autoPasswordTextField_isError {
+                return ""
+            } else {
+                return NSLocalizedString("LockedPage.PasswordError", comment: "super:LockedPage")
+            }
+        }
+    }
+    
+    private var autoTouchID_FaceID: String {
+        if safeAreaInsets.bottom > 0 {
+            return NSLocalizedString("LockedPage.FaceID", comment: "super:LockedPage")
+        } else {
+            return NSLocalizedString("LockedPgae.TouchID", comment: "super:LockedPage")
+        }
+    }
+    
+    private var autoTouchID_FaceIDIcon: String {
+        if safeAreaInsets.bottom > 0 {
+            return "faceid"
+        } else {
+            return "touchid"
+        }
+    }
 }
 
 struct PreferenceList_Previews: PreviewProvider {
     static var previews: some View {
-        PreferenceList(thisSelf: friendList[0], uiColor: .constant(.blue), navigationTitle: .constant("Preference"))
+        PreferenceList(
+            thisSelf: friendList[0],
+            uiColor: .constant(.blue),
+            isAppLockEnable: .constant(true),
+            navigationTitle: .constant("Preference")
+        )
     }
 }

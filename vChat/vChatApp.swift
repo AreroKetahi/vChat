@@ -10,11 +10,32 @@ import SwiftUI
 @main
 struct vChatApp: App {
     @State var isAppLocked = StoragedVars().isAppLocked
+    @State var isAppLockEnable = StoragedVars().isAppLockEnable
     @State var appState = AppState.lock
+    @State var isAppReloadEnable = false
     var body: some Scene {
         WindowGroup {
-            ContentView(appState: $appState, isAppLocked: $isAppLocked)
+            if !isAppReloadEnable {
+                ContentView(
+                    appState: $appState,
+                    isAppLocked: $isAppLocked,
+                    isAppLockEnable: $isAppLockEnable,
+                    isAppReloadEnable: $isAppReloadEnable
+                )
+            } else {
+                EmptyPage(isAppReloadEnable: $isAppReloadEnable)
+            }
         }
+    }
+}
+
+struct EmptyPage: View {
+    @Binding var isAppReloadEnable: Bool
+    var body: some View {
+        Spacer()
+            .onAppear {
+                isAppReloadEnable = false
+            }
     }
 }
 

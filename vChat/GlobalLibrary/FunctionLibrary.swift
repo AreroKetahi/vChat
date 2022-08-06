@@ -45,6 +45,7 @@ func isBiometricsEnable() -> Bool {
     if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
         return true
     } else {
+        print(error.debugDescription)
         return false
     }
 }

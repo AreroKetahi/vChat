@@ -38,7 +38,7 @@
 /* super:Entry */
 "Entry.OriginTitle" = "聊天";
 
-/* super:Entry */
+/* super:Contact */
 "Entry.Preference" = "设置";
 
 /* super:LockedPage */
@@ -91,3 +91,57 @@
 
 /* super:PreferenceList */
 "PreferenceList.Preference" = "设置";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Cancal" = "取消";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Next" = "下一步";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.CertificatePlaceHolder" = "验证密码...";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.Match" = "密码已匹配";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.NoCertificate" = "请验证密码";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.NoMatch" = "密码未匹配";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.SetPassword" = "请设置密码";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Primary.Title" = "第一步";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.Authenticate%@" = "验证 %@";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.Escape" = "稍后设置...";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Secondary.SubTitle%@" = "启用 %@";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Close" = "关闭此页面";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Finish" = "完成！";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Tertiary.Subtitle" = "App Lock已启用。";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title" = "注册App Lock";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title.2" = "共两步";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Title.3" = "共三步";
+
+/* super:SetUpAppLock */
+"SetupAppLock.Secondary.Title" = "第二步";

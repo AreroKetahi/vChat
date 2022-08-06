@@ -30,11 +30,19 @@
 		C19F4EC32859AA6900834874 /* vChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */; };
 		C1ABE72C286F25FF00D0BC39 /* MessagePopReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */; };
 		C1ABE72E286F274800D0BC39 /* MessagePopSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */; };
+		C1B32791289E7DD100779756 /* SetUpAppLockTertiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B32790289E7DD100779756 /* SetUpAppLockTertiary.swift */; };
+		C1B32793289E7FAC00779756 /* SetUpAppLockPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B32792289E7FAC00779756 /* SetUpAppLockPrimary.swift */; };
+		C1B32795289E811400779756 /* SetUpAppLockSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B32794289E811400779756 /* SetUpAppLockSecondary.swift */; };
+		C1B32797289E82ED00779756 /* SetUpAppLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B32796289E82ED00779756 /* SetUpAppLock.swift */; };
 		C1C763FF2889034F003F04E0 /* GlobalVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C763FE2889034F003F04E0 /* GlobalVars.swift */; };
 		C1C76401288905BC003F04E0 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C76400288905BC003F04E0 /* ContactList.swift */; };
 		C1C7640428891CD6003F04E0 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C7640328891CD6003F04E0 /* Components.swift */; };
 		C1C7640628893FD6003F04E0 /* ContactPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C7640528893FD6003F04E0 /* ContactPage.swift */; };
 		C1D1499A286F49B400011F17 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D14999286F49B400011F17 /* Extensions.swift */; };
+		C1DF9A09289E417D00BFBCCD /* CloseAppLockPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DF9A08289E417D00BFBCCD /* CloseAppLockPrimary.swift */; };
+		C1DF9A0B289E430200BFBCCD /* CloseAppLockSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DF9A0A289E430200BFBCCD /* CloseAppLockSecondary.swift */; };
+		C1DF9A0E289E543300BFBCCD /* AccentColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DF9A0D289E543300BFBCCD /* AccentColor.swift */; };
+		C1DF9A11289E565500BFBCCD /* CloseAppLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DF9A10289E565500BFBCCD /* CloseAppLock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,11 +99,19 @@
 		C19F4EC22859AA6900834874 /* vChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C1ABE72B286F25FF00D0BC39 /* MessagePopReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopReceive.swift; sourceTree = "<group>"; };
 		C1ABE72D286F274800D0BC39 /* MessagePopSent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePopSent.swift; sourceTree = "<group>"; };
+		C1B32790289E7DD100779756 /* SetUpAppLockTertiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpAppLockTertiary.swift; sourceTree = "<group>"; };
+		C1B32792289E7FAC00779756 /* SetUpAppLockPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpAppLockPrimary.swift; sourceTree = "<group>"; };
+		C1B32794289E811400779756 /* SetUpAppLockSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpAppLockSecondary.swift; sourceTree = "<group>"; };
+		C1B32796289E82ED00779756 /* SetUpAppLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpAppLock.swift; sourceTree = "<group>"; };
 		C1C763FE2889034F003F04E0 /* GlobalVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVars.swift; sourceTree = "<group>"; };
 		C1C76400288905BC003F04E0 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		C1C7640328891CD6003F04E0 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		C1C7640528893FD6003F04E0 /* ContactPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPage.swift; sourceTree = "<group>"; };
 		C1D14999286F49B400011F17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C1DF9A08289E417D00BFBCCD /* CloseAppLockPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseAppLockPrimary.swift; sourceTree = "<group>"; };
+		C1DF9A0A289E430200BFBCCD /* CloseAppLockSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseAppLockSecondary.swift; sourceTree = "<group>"; };
+		C1DF9A0D289E543300BFBCCD /* AccentColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColor.swift; sourceTree = "<group>"; };
+		C1DF9A10289E565500BFBCCD /* CloseAppLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseAppLock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				C1645224289953E500099386 /* PreferenceList.swift */,
+				C1DF9A0C289E541600BFBCCD /* Module */,
 				C16537D2289CFA9D00BCC419 /* Details */,
 			);
 			path = Preference;
@@ -182,6 +199,7 @@
 		C16537D2289CFA9D00BCC419 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				C1DF9A07289E414A00BFBCCD /* App Lock */,
 				C16537D7289D0C8B00BCC419 /* AccentColorPreviewPop */,
 			);
 			path = Details;
@@ -281,6 +299,25 @@
 			path = MessagePops;
 			sourceTree = "<group>";
 		};
+		C1B3278E289E7D8100779756 /* Close App Lock */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF9A08289E417D00BFBCCD /* CloseAppLockPrimary.swift */,
+				C1DF9A0A289E430200BFBCCD /* CloseAppLockSecondary.swift */,
+			);
+			path = "Close App Lock";
+			sourceTree = "<group>";
+		};
+		C1B3278F289E7D8E00779756 /* Setup App Lock */ = {
+			isa = PBXGroup;
+			children = (
+				C1B32792289E7FAC00779756 /* SetUpAppLockPrimary.swift */,
+				C1B32794289E811400779756 /* SetUpAppLockSecondary.swift */,
+				C1B32790289E7DD100779756 /* SetUpAppLockTertiary.swift */,
+			);
+			path = "Setup App Lock";
+			sourceTree = "<group>";
+		};
 		C1C76402288905C5003F04E0 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +325,33 @@
 				C1C7640528893FD6003F04E0 /* ContactPage.swift */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		C1DF9A07289E414A00BFBCCD /* App Lock */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3278E289E7D8100779756 /* Close App Lock */,
+				C1B3278F289E7D8E00779756 /* Setup App Lock */,
+			);
+			path = "App Lock";
+			sourceTree = "<group>";
+		};
+		C1DF9A0C289E541600BFBCCD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF9A0D289E543300BFBCCD /* AccentColor.swift */,
+				C1DF9A0F289E564500BFBCCD /* App Lock */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C1DF9A0F289E564500BFBCCD /* App Lock */ = {
+			isa = PBXGroup;
+			children = (
+				C1DF9A10289E565500BFBCCD /* CloseAppLock.swift */,
+				C1B32796289E82ED00779756 /* SetUpAppLock.swift */,
+			);
+			path = "App Lock";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,7 +499,9 @@
 				C1C76401288905BC003F04E0 /* ContactList.swift in Sources */,
 				C10807DA286EE15900F209A0 /* PersonHeadImage.swift in Sources */,
 				C1C763FF2889034F003F04E0 /* GlobalVars.swift in Sources */,
+				C1DF9A0B289E430200BFBCCD /* CloseAppLockSecondary.swift in Sources */,
 				C1ABE72C286F25FF00D0BC39 /* MessagePopReceive.swift in Sources */,
+				C1DF9A09289E417D00BFBCCD /* CloseAppLockPrimary.swift in Sources */,
 				C137669F285CA4E9002C457C /* Friend.swift in Sources */,
 				C19F4EA82859AA6700834874 /* ContentView.swift in Sources */,
 				C13766A128658D5F002C457C /* ChatList.swift in Sources */,
@@ -445,11 +511,17 @@
 				C1645225289953E500099386 /* PreferenceList.swift in Sources */,
 				C16537D9289D0CAB00BCC419 /* AccentColorPreviewPopReceive.swift in Sources */,
 				C1C7640628893FD6003F04E0 /* ContactPage.swift in Sources */,
+				C1DF9A0E289E543300BFBCCD /* AccentColor.swift in Sources */,
 				C16A96EB286DD84200AAE1D7 /* Message.swift in Sources */,
 				C19F4EA62859AA6700834874 /* vChatApp.swift in Sources */,
+				C1B32793289E7FAC00779756 /* SetUpAppLockPrimary.swift in Sources */,
+				C1B32795289E811400779756 /* SetUpAppLockSecondary.swift in Sources */,
+				C1B32797289E82ED00779756 /* SetUpAppLock.swift in Sources */,
 				C13766A428658E9E002C457C /* ChatPage.swift in Sources */,
+				C1DF9A11289E565500BFBCCD /* CloseAppLock.swift in Sources */,
 				C19D2FEA289D113D005BA946 /* AccentColorPreviewPopSent.swift in Sources */,
 				C14231FB289D475900992200 /* EntryPoint.swift in Sources */,
+				C1B32791289E7DD100779756 /* SetUpAppLockTertiary.swift in Sources */,
 				C1ABE72E286F274800D0BC39 /* MessagePopSent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
