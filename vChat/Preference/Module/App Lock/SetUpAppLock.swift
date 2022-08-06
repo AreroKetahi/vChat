@@ -79,12 +79,7 @@ struct SetUpAppLock: View {
     }
     
     private func didAppLockChangeSheetDissmiss() {
-        if !appLockPrimaryDismissLock {
-            isAppLockEnable.toggle()
-            DispatchQueue.main.async {
-                appLockPrimaryDismissLock = false
-            }
-        }
+        isAppLockEnable.toggle()
         DispatchQueue.main.async {
             appLockToogleLock = false
         }

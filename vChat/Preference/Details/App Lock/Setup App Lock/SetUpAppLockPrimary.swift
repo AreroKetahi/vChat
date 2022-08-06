@@ -127,7 +127,8 @@ struct SetUpAppLockPrimary: View {
                         SetUpAppLockSecondary(
                             isBioLoginAuthPass: $isBioLoginAuthPass,
                             isSetUpAppLockPresent: $isSetUpAppLockPresent,
-                            isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent
+                            isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent,
+                            appLockPrimaryDismissLock: $appLockPrimaryDismissLock
                         )
                         .navigationBarTitle("SetUpAppLock.Title")
                     } label: {

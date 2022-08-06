@@ -108,6 +108,8 @@ struct PreferenceList: View {
             DispatchQueue.main.async {
                 appLockPrimaryDismissLock = false
             }
+        } else if appLockPrimaryDismissLock {
+            appLockPrimaryDismissLock = false
         }
         DispatchQueue.main.async {
             appLockToogleLock = false

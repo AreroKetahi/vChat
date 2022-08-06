@@ -13,6 +13,7 @@ struct SetUpAppLockSecondary: View {
     
     @Binding var isSetUpAppLockPresent: Bool
     @Binding var isAppLockChangeSheetPresent: Bool
+    @Binding var appLockPrimaryDismissLock: Bool
     
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     var body: some View {
@@ -57,7 +58,8 @@ struct SetUpAppLockSecondary: View {
                     VStack {
                         SetUpAppLockTertiary(
                          isSetUpAppLockPresent: $isSetUpAppLockPresent,
-                         isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent
+                         isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent,
+                         appLockPrimaryDismissLock: $appLockPrimaryDismissLock
                         )
                     }
                     .navigationBarTitle("SetUpAppLock.Title")
@@ -72,7 +74,8 @@ struct SetUpAppLockSecondary: View {
             NavigationLink {
                SetUpAppLockTertiary(
                 isSetUpAppLockPresent: $isSetUpAppLockPresent,
-                isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent
+                isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent,
+                appLockPrimaryDismissLock: $appLockPrimaryDismissLock
                )
                 .navigationBarTitle("SetUpAppLock.Title")
             } label: {
@@ -104,7 +107,7 @@ struct SetUpAppLockSecondary_Previews: PreviewProvider {
         SetUpAppLockSecondary(
             isBioLoginAuthPass: .constant(false),
             isSetUpAppLockPresent: .constant(false),
-            isAppLockChangeSheetPresent: .constant(false)
+            isAppLockChangeSheetPresent: .constant(false), appLockPrimaryDismissLock: .constant(false)
         )
     }
 }

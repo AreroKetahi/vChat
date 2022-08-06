@@ -10,6 +10,7 @@ import SwiftUI
 struct SetUpAppLockTertiary: View {
     @Binding var isSetUpAppLockPresent: Bool
     @Binding var isAppLockChangeSheetPresent: Bool
+    @Binding var appLockPrimaryDismissLock: Bool
     var body: some View {
         VStack {
             Spacer()
@@ -27,6 +28,7 @@ struct SetUpAppLockTertiary: View {
             Button {
                 isSetUpAppLockPresent = false
                 isAppLockChangeSheetPresent = false
+                appLockPrimaryDismissLock = true
             } label: {
                 Text("SetUpAppLock.Tertiary.Close")
                     .foregroundColor(.white)
@@ -46,7 +48,8 @@ struct SetUpAppLockTertiary_Previews: PreviewProvider {
     static var previews: some View {
         SetUpAppLockTertiary(
             isSetUpAppLockPresent: .constant(true),
-            isAppLockChangeSheetPresent: .constant(true)
+            isAppLockChangeSheetPresent: .constant(true),
+            appLockPrimaryDismissLock: .constant(false)
         )
     }
 }
