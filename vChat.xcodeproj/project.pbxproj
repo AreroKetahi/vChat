@@ -348,8 +348,8 @@
 		C1DF9A0F289E564500BFBCCD /* App Lock */ = {
 			isa = PBXGroup;
 			children = (
-				C1DF9A10289E565500BFBCCD /* CloseAppLock.swift */,
 				C1B32796289E82ED00779756 /* SetUpAppLock.swift */,
+				C1DF9A10289E565500BFBCCD /* CloseAppLock.swift */,
 			);
 			path = "App Lock";
 			sourceTree = "<group>";
