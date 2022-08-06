@@ -25,7 +25,7 @@ struct CloseAppLockSecondary: View {
                         Spacer().frame(height: 10)
                         HStack {
                             Spacer().frame(width: 10)
-                            Text("Cancal")
+                            Text("SetUpAppLock.Cancel")
                                 .foregroundColor(.white)
                             Spacer().frame(width: 10)
                         }
@@ -35,7 +35,7 @@ struct CloseAppLockSecondary: View {
                     .padding([.top, .leading, .trailing])
                 }
             } // Cancal button
-            Text("Enter password to close App Lock")
+            Text("CloseAppLock.Secondary.Title")
                 .font(.system(size: 30, weight: .semibold, design: .rounded))
                 .multilineTextAlignment(.center)
                 .padding()
@@ -90,7 +90,7 @@ struct CloseAppLockSecondary: View {
             } label: {
                 HStack{
                     Image(systemName: "lock.slash.fill")
-                    Text("Close App Lock")
+                    Text("CloseAppLock.Secondary.CloseButton")
                 }
                 .padding()
                 .foregroundColor(.white)

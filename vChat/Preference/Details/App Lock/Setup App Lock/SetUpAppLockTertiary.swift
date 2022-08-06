@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct SetUpAppLockTertiary: View {
+    @ObservedObject private var storage = StoragedVars()
+    
     @Binding var isSetUpAppLockPresent: Bool
     @Binding var isAppLockChangeSheetPresent: Bool
     @Binding var appLockPrimaryDismissLock: Bool
+    
+    @Binding var password: String
+    @State private var isFinishStored = false
     var body: some View {
         VStack {
             Spacer()
@@ -39,6 +44,7 @@ struct SetUpAppLockTertiary: View {
             Spacer().frame(height: 100)
         }
         .onAppear {
+            storage.localPassword = password.sha256
             UINotificationFeedbackGenerator().notificationOccurred(.success)
         }
     }
@@ -49,7 +55,8 @@ struct SetUpAppLockTertiary_Previews: PreviewProvider {
         SetUpAppLockTertiary(
             isSetUpAppLockPresent: .constant(true),
             isAppLockChangeSheetPresent: .constant(true),
-            appLockPrimaryDismissLock: .constant(false)
+            appLockPrimaryDismissLock: .constant(false),
+            password: .constant("")
         )
     }
 }

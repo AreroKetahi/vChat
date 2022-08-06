@@ -8,6 +8,21 @@
 /* super:ChatPage */
 "ChatPage.Send" = "Send";
 
+/* super:CloseAppLock */
+"CloseAppLock.ButtonText" = "I know the issue and turn off App Lock.";
+
+/* super:CloseAppLock */
+"CloseAppLock.Definition" = "When App Lock is turned off, vChat open requests will not be protected.";
+
+/* super:CloseAppLock */
+"CloseAppLock.Primary.Title" = "Close App Lock";
+
+/* super:CloseAppLock */
+"CloseAppLock.Secondary.CloseButton" = "Close App Lock";
+
+/* super:CloseAppLock */
+"CloseAppLock.Secondary.Title" = "Enter password to close App Lock";
+
 /* super:ContactList */
 "ContactList.Contacts" = "Contacts";
 
@@ -93,7 +108,7 @@
 "PreferenceList.Preference" = "Preference";
 
 /* super:SetUpAppLock */
-"SetUpAppLock.Cancel" = "Cancal";
+"SetUpAppLock.Cancel" = "Cancel";
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Next" = "Next Step";
@@ -124,6 +139,18 @@
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Secondary.SubTitle%@" = "Enable %@";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.ButtonText" = "Set up App Lock";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Definition.1" = "App Lock will protect your app from being used by others when you are not using vChat.";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Definition.2" = "When you are not using vChat, the app will automatically lock to keep your data safe.";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Title" = "Get started with App Lock";
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Tertiary.Close" = "Close this page";

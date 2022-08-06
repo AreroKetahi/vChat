@@ -128,7 +128,8 @@ struct SetUpAppLockPrimary: View {
                             isBioLoginAuthPass: $isBioLoginAuthPass,
                             isSetUpAppLockPresent: $isSetUpAppLockPresent,
                             isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent,
-                            appLockPrimaryDismissLock: $appLockPrimaryDismissLock
+                            appLockPrimaryDismissLock: $appLockPrimaryDismissLock,
+                            password: $password
                         )
                         .navigationBarTitle("SetUpAppLock.Title")
                     } label: {
@@ -150,7 +151,7 @@ struct SetUpAppLockPrimary: View {
                         Spacer().frame(height: 10)
                         HStack {
                             Spacer().frame(width: 10)
-                            Text("SetUpAppLock.Cancal")
+                            Text("SetUpAppLock.Cancel")
                                 .foregroundColor(.white)
                             Spacer().frame(width: 10)
                         }

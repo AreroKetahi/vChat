@@ -30,7 +30,7 @@ struct SetUpAppLock: View {
                         Spacer().frame(height: 10)
                         HStack {
                             Spacer().frame(width: 10)
-                            Text("Cancal")
+                            Text("SetUpAppLock.Cancel")
                                 .foregroundColor(.white)
                             Spacer().frame(width: 10)
                         }
@@ -40,13 +40,13 @@ struct SetUpAppLock: View {
                     .padding([.top, .leading, .trailing])
                 }
             }
-            Text("Get started with App Lock")
+            Text("SetUpAppLock.Start.Title")
                 .font(.system(size: 30, weight: .semibold, design: .rounded))
                 .padding([.leading, .bottom, .trailing])
-            Text("App Lock will protect your app from being used by others when you are not using vChat.")
+            Text("SetUpAppLock.Start.Definition.1")
                 .font(.title3)
                 .padding([.leading, .bottom, .trailing])
-            Text("When you are not using vChat, the app will automatically lock to keep your data safe.")
+            Text("SetUpAppLock.Start.Definition.2")
                 .font(.headline)
                 .padding(.horizontal)
             Button {
@@ -54,7 +54,7 @@ struct SetUpAppLock: View {
             } label: {
                 HStack {
                     Image(systemName: "lock.shield")
-                    Text("Set up App Lock")
+                    Text("SetUpAppLock.Start.ButtonText")
                 }
                 .foregroundColor(.white)
                 .padding()
@@ -89,7 +89,7 @@ struct SetUpAppLock: View {
 struct SetUpAppLock_Previews: PreviewProvider {
     static var previews: some View {
         SetUpAppLock(
-            isSetUpAppLockPresent: .constant(true),
+            isSetUpAppLockPresent: .constant(false),
             appLockPrimaryDismissLock: .constant(true),
             isAppLockEnable: .constant(true),
             appLockToogleLock: .constant(true),

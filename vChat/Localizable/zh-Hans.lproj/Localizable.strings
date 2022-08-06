@@ -8,6 +8,21 @@
 /* super:ChatPage */
 "ChatPage.Send" = "发送";
 
+/* super:CloseAppLock */
+"CloseAppLock.ButtonText" = "我知道问题并关闭App Lock。";
+
+/* super:CloseAppLock */
+"CloseAppLock.Definition" = "当App Lock关闭时，vChat打开的请求将不受保护。";
+
+/* super:CloseAppLock */
+"CloseAppLock.Primary.Title" = "关闭App Lock";
+
+/* super:CloseAppLock */
+"CloseAppLock.Secondary.CloseButton" = "关闭 App Lock";
+
+/* super:CloseAppLock */
+"CloseAppLock.Secondary.Title" = "输入密码以关闭App Lock";
+
 /* super:ContactList */
 "ContactList.Contacts" = "通讯录";
 
@@ -124,6 +139,18 @@
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Secondary.SubTitle%@" = "启用 %@";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.ButtonText" = "注册 App Lock";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Definition.1" = "当您不使用vChat时，App Lock将保护您的应用程序不被他人使用。";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Definition.2" = "当您不使用vChat时，应用程序将会自动锁定以保护您的数据安全。";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Title" = "开始使用App Lock";
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Tertiary.Close" = "关闭此页面";

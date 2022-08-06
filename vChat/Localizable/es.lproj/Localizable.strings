@@ -8,6 +8,21 @@
 /* super:ChatPage */
 "ChatPage.Send" = "Enviar";
 
+/* super:CloseAppLock */
+"CloseAppLock.ButtonText" = "";
+
+/* super:CloseAppLock */
+"CloseAppLock.Definition" = "";
+
+/* super:CloseAppLock */
+"CloseAppLock.Primary.Title" = "";
+
+/* super:CloseAppLock */
+"CloseAppLock.Secondary.CloseButton" = "";
+
+/* super:CloseAppLock */
+"CloseAppLock.Secondary.Title" = "";
+
 /* super:ContactList */
 "ContactList.Contacts" = "Directorio";
 
@@ -124,6 +139,18 @@
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Secondary.SubTitle%@" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.ButtonText" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Definition.1" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Definition.2" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Title" = "";
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Tertiary.Close" = "";

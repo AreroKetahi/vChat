@@ -8,6 +8,21 @@
 /* super:ChatPage */
 "ChatPage.Send" = "Отправить";
 
+/* super:CloseAppLock */
+"CloseAppLock.ButtonText" = "";
+
+/* super:CloseAppLock */
+"CloseAppLock.Definition" = "";
+
+/* super:CloseAppLock */
+"CloseAppLock.Primary.Title" = "";
+
+/* super:CloseAppLock */
+"CloseAppLock.Secondary.CloseButton" = "";
+
+/* super:CloseAppLock */
+"CloseAppLock.Secondary.Title" = "";
+
 /* super:ContactList */
 "ContactList.Contacts" = "Aдресная Kнига";
 
@@ -95,53 +110,65 @@
 /* super:SetUpAppLock */
 "SetUpAppLock.Cancel" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Next" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Primary.CertificatePlaceHolder" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Primary.Match" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Primary.NoCertificate" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Primary.NoMatch" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Primary.SetPassword" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Primary.Title" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Secondary.Authenticate%@" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Secondary.Escape" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Secondary.SubTitle%@" = "";
 
 /* super:SetUpAppLock */
+"SetUpAppLock.Start.ButtonText" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Definition.1" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Definition.2" = "";
+
+/* super:SetUpAppLock */
+"SetUpAppLock.Start.Title" = "";
+
+
 "SetUpAppLock.Tertiary.Close" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Tertiary.Finish" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Tertiary.Subtitle" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Title" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Title.2" = "";
 
-/* super:SetUpAppLock */
+
 "SetUpAppLock.Title.3" = "";
 
-/* super:SetUpAppLock */
+
 "SetupAppLock.Secondary.Title" = "";

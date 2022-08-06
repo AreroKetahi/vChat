@@ -22,7 +22,7 @@ struct CloseAppLockPrimary: View {
                         Spacer().frame(height: 10)
                         HStack {
                             Spacer().frame(width: 10)
-                            Text("Cancal")
+                            Text("SetUpAppLock.Cancel")
                                 .foregroundColor(.white)
                             Spacer().frame(width: 10)
                         }
@@ -32,7 +32,7 @@ struct CloseAppLockPrimary: View {
                     .padding()
                 }
             }
-            Text("Close App Lock")
+            Text("CloseAppLock.Primary.Title")
                 .font(.system(size: 30, weight: .semibold, design: .rounded))
                 .padding()
             Image(systemName: "lock.slash.fill")
@@ -41,7 +41,7 @@ struct CloseAppLockPrimary: View {
 //                .frame(width: 280, height: 300)
                 .foregroundColor(.blue)
                 .padding(.horizontal).padding(.horizontal).padding(.horizontal)
-            Text("When App Lock is turned off, vChat open requests will not be protected.")
+            Text("CloseAppLock.Definition")
                 .font(.headline)
                 .padding()
             Button {
@@ -49,7 +49,7 @@ struct CloseAppLockPrimary: View {
             } label: {
                 HStack {
                     Image(systemName: "lock.slash")
-                    Text("I know the issue and turn off App Lock.")
+                    Text("CloseAppLock.ButtonText")
                 }
                 .foregroundColor(.white)
                 .padding()
