@@ -22,7 +22,7 @@ struct SetUpAppLockSecondary: View {
                 VStack(alignment: .leading) {
                     Text("SetupAppLock.Secondary.Title")
                         .font(.system(size: 50, weight: .semibold, design: .rounded))
-                    Text("SetUpAppLock.Total.3")
+                    Text("SetUpAppLock.Title.3")
                         .font(.system(size: 20, design: .rounded))
                     Spacer().frame(height: 20)
                     Text("SetUpAppLock.Secondary.SubTitle\(autoTouchID_FaceID)")
