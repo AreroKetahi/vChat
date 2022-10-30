@@ -172,3 +172,5 @@
 
 /* super:SetUpAppLock */
 "SetupAppLock.Secondary.Title" = "";
+
+"SetupAppLock.SkipBioNote%@" = "";

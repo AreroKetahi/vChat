@@ -6,22 +6,23 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct SetUpAppLockPrimary: View {
-    @Binding var isSetUpAppLockPresent: Bool
-    @Binding var password: String
-    @Binding var autoPasswordTextField_isError: Bool
-    @Binding var passwordCertificate: String
-    @Binding var appLockPrimaryDismissLock: Bool
     @Binding var isAppLockEnable: Bool
-    @Binding var appLockToogleLock: Bool
+    @Binding var isAppLockSheetPresent: Bool
     
-    @Binding var isBioLoginAuthPass: Bool
-    @Binding var isAppLockChangeSheetPresent: Bool
+    @State private var password = ""
+    @State private var passwordCertificate = ""
+    @State private var passwordBoxState: PasswordBoxState_SetUpApp = .enterPassword
+    @State private var autoPasswordTextField_isError = false
     
-    @State private var passwordBoxState: PasswordBoxState = .enterPassword
+    @State private var isBioNoticePresent = false
     
     @Environment(\.colorScheme) private var colorScheme
+    
+    @Environment(\.safeAreaInsets) private var safeAreaInsets
+    @Binding var isBioLoginAuthPass: Bool
     var body: some View {
         NavigationView {
             VStack {
@@ -124,20 +125,49 @@ struct SetUpAppLockPrimary: View {
                 Spacer().frame(height: 20)
                 if passwordBoxState == .match {
                     NavigationLink {
-                        SetUpAppLockSecondary(
-                            isBioLoginAuthPass: $isBioLoginAuthPass,
-                            isSetUpAppLockPresent: $isSetUpAppLockPresent,
-                            isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent,
-                            appLockPrimaryDismissLock: $appLockPrimaryDismissLock,
-                            password: $password
-                        )
-                        .navigationBarTitle("SetUpAppLock.Title")
+                        if isBiometricsEnable() {
+                            SetUpAppLockSecondary(
+                                isAppLockEnable: $isAppLockEnable,
+                                isAppLockSheetPresent: $isAppLockSheetPresent,
+                                isBioLoginAuthPass: $isBioLoginAuthPass,
+                                password: $password
+                            )
+                                .navigationBarTitle("SetUpAppLock.Title")
+                        } else {
+                            SetUpAppLockTertiary(isAppLockEnable: $isAppLockEnable, isAppLockSheetPresent: $isAppLockSheetPresent, password: $password)
+                                .navigationBarBackButtonHidden(true)
+                        }
                     } label: {
                         Text("SetUpAppLock.Next")
                             .foregroundColor(.white)
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 15, style: .continuous).foregroundColor(.blue))
+                    }
                 }
+                if !isBiometricsEnable() {
+                    VStack {
+                        Button {
+                            isBioNoticePresent = true
+                        } label: {
+                            HStack {
+                                Image(systemName: "info.circle")
+                                Text("Will skip setting \(autoTouchID_FaceID).")
+                            }
+                        }
+                    }
+                    .alert("LockedPage.CanNotUse.Title", isPresented: $isBioNoticePresent, actions: {
+                        if safeAreaInsets.bottom > 0 {
+                            Text("LockedPage.CanNotUse.FaceID")
+                        } else {
+                            Text("LockedPage.CanNotUse.TouchID")
+                        }
+                    }, message: {
+                        if safeAreaInsets.bottom > 0 {
+                            Text("LockedPage.CanNotUse.FaceID")
+                        } else {
+                            Text("LockedPage.CanNotUse.TouchID")
+                        }
+                    })
                 }
                 Spacer()
             }
@@ -145,21 +175,26 @@ struct SetUpAppLockPrimary: View {
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing:
                 Button {
-                    isSetUpAppLockPresent = false
+                    isAppLockSheetPresent = false
                 } label: {
-                    VStack {
-                        Spacer().frame(height: 10)
-                        HStack {
-                            Spacer().frame(width: 10)
-                            Text("SetUpAppLock.Cancel")
-                                .foregroundColor(.white)
-                            Spacer().frame(width: 10)
+                    Circle()
+                        .foregroundColor(Color("LightGray"))
+                        .frame(height: 40)
+                        .overlay {
+                            Image(systemName: "xmark")
+                                .foregroundColor(.gray)
                         }
-                        Spacer().frame(height: 10)
-                    }
-                    .background(RoundedRectangle(cornerRadius: 10, style: .continuous).foregroundColor(.blue))
+//                        .padding()
                 }
             )
+        }
+    }
+    
+    private var autoTouchID_FaceID: String {
+        if safeAreaInsets.bottom > 0 {
+            return NSLocalizedString("LockedPage.FaceID", comment: "super:LockedPage")
+        } else {
+            return NSLocalizedString("LockedPgae.TouchID", comment: "super:LockedPage")
         }
     }
     
@@ -182,19 +217,12 @@ struct SetUpAppLockPrimary: View {
 struct SetUpAppLockPrimary_Previews: PreviewProvider {
     static var previews: some View {
         SetUpAppLockPrimary(
-            isSetUpAppLockPresent: .constant(true),
-            password: .constant(""),
-            autoPasswordTextField_isError: .constant(true),
-            passwordCertificate: .constant(""),
-            appLockPrimaryDismissLock: .constant(true),
-            isAppLockEnable: .constant(true),
-            appLockToogleLock: .constant(true),
-            isBioLoginAuthPass: .constant(true),
-            isAppLockChangeSheetPresent: .constant(true)
-        )
+            isAppLockEnable: .constant(false),
+            isAppLockSheetPresent: .constant(true),
+            isBioLoginAuthPass: .constant(false))
     }
 }
 
-enum PasswordBoxState {
+enum PasswordBoxState_SetUpApp {
     case enterPassword, lessEightChara, match, noMatch, noCertificate
 }

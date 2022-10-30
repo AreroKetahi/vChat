@@ -10,29 +10,26 @@ import SwiftUI
 struct CloseAppLockSecondary: View {
     @State private var password = ""
     @State private var autoPasswordTextField_isError = false
-    @Binding var isAppLockChangePasswordBoxPresent: Bool
-    @Binding var isAppLockChangeSheetPresent: Bool
-    @Binding var appLockPrimaryDismissLock: Bool
+    
+    @Binding var isAppLockEnable: Bool
+    @Binding var isAppLockSheetPresent: Bool
+    @Binding var isCloseAppLockSecPresent: Bool
     @Environment(\.colorScheme) private var colorScheme
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 Button {
-                    isAppLockChangePasswordBoxPresent = false
+                    isCloseAppLockSecPresent = false
                 } label: {
-                    VStack {
-                        Spacer().frame(height: 10)
-                        HStack {
-                            Spacer().frame(width: 10)
-                            Text("SetUpAppLock.Cancel")
-                                .foregroundColor(.white)
-                            Spacer().frame(width: 10)
+                    Circle()
+                        .foregroundColor(Color("LightGray"))
+                        .frame(width: 40)
+                        .overlay {
+                            Image(systemName: "xmark")
+                                .foregroundColor(.gray)
                         }
-                        Spacer().frame(height: 10)
-                    }
-                    .background(RoundedRectangle(cornerRadius: 10, style: .continuous).foregroundColor(.blue))
-                    .padding([.top, .leading, .trailing])
+                        .padding()
                 }
             } // Cancal button
             Text("CloseAppLock.Secondary.Title")
@@ -80,9 +77,9 @@ struct CloseAppLockSecondary: View {
                 if password.count >= 8 {
                     if  password.sha256 == StoragedVars().localPassword {
                         password = ""
-                        isAppLockChangePasswordBoxPresent = false
-                        isAppLockChangeSheetPresent = false
-                        appLockPrimaryDismissLock = true
+                        isAppLockEnable = false
+                        isCloseAppLockSecPresent = false
+                        isAppLockSheetPresent = false
                     } else {
                         autoPasswordTextField_isError = true
                     }
@@ -127,6 +124,10 @@ struct CloseAppLockSecondary: View {
 
 struct CloseAppLockSecondary_Previews: PreviewProvider {
     static var previews: some View {
-        CloseAppLockSecondary(isAppLockChangePasswordBoxPresent: .constant(false), isAppLockChangeSheetPresent: .constant(false), appLockPrimaryDismissLock: .constant(false))
+        CloseAppLockSecondary(
+            isAppLockEnable: .constant(true),
+            isAppLockSheetPresent: .constant(true),
+            isCloseAppLockSecPresent: .constant(true)
+        )
     }
 }

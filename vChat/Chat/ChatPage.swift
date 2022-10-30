@@ -31,16 +31,17 @@ struct ChatPage: View {
                         MessagePop(messages: messages, imageName: selfImageName, uiColor: $uiColor)
                     }
                 }
-                Spacer().frame(height: 10)
-                Spacer().frame(height: 44) // Safe Area
-                Spacer().frame(height: errorCorrectionSpace) //Error Correction Space
+//                Spacer().frame(height: 10)
+//                Spacer().frame(height: 44) // Safe Area
+//                Spacer().frame(height: errorCorrectionSpace) //Error Correction Space
                 Rectangle() // Location Point
                     .foregroundColor(Color(.displayP3, red: 0.5, green: 0.5, blue: 0.5, opacity: 0))
+                    .frame(height: 0)
                     .id(locationPoint)
-                Spacer()
+//                Spacer()
             }
             .onAppear(perform: {proxy.scrollTo(locationPoint, anchor: .bottom)})
-            .overlay(alignment: .bottom) {
+            .safeAreaInset(edge: .bottom) {
                 HStack {
                     TextField(
                         "ChatPage.Messages",

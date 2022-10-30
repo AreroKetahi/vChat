@@ -10,12 +10,9 @@ import SwiftUI
 struct SetUpAppLockTertiary: View {
     @ObservedObject private var storage = StoragedVars()
     
-    @Binding var isSetUpAppLockPresent: Bool
-    @Binding var isAppLockChangeSheetPresent: Bool
-    @Binding var appLockPrimaryDismissLock: Bool
-    
+    @Binding var isAppLockEnable: Bool
+    @Binding var isAppLockSheetPresent: Bool
     @Binding var password: String
-    @State private var isFinishStored = false
     var body: some View {
         VStack {
             Spacer()
@@ -31,9 +28,8 @@ struct SetUpAppLockTertiary: View {
                 .padding()
             } // Title
             Button {
-                isSetUpAppLockPresent = false
-                isAppLockChangeSheetPresent = false
-                appLockPrimaryDismissLock = true
+                isAppLockEnable = true
+                isAppLockSheetPresent = false
             } label: {
                 Text("SetUpAppLock.Tertiary.Close")
                     .foregroundColor(.white)
@@ -53,9 +49,8 @@ struct SetUpAppLockTertiary: View {
 struct SetUpAppLockTertiary_Previews: PreviewProvider {
     static var previews: some View {
         SetUpAppLockTertiary(
-            isSetUpAppLockPresent: .constant(true),
-            isAppLockChangeSheetPresent: .constant(true),
-            appLockPrimaryDismissLock: .constant(false),
+            isAppLockEnable: .constant(false),
+            isAppLockSheetPresent: .constant(true),
             password: .constant("")
         )
     }

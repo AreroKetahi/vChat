@@ -9,12 +9,9 @@ import SwiftUI
 import LocalAuthentication
 
 struct SetUpAppLockSecondary: View {
+    @Binding var isAppLockEnable: Bool
+    @Binding var isAppLockSheetPresent: Bool
     @Binding var isBioLoginAuthPass: Bool
-    
-    @Binding var isSetUpAppLockPresent: Bool
-    @Binding var isAppLockChangeSheetPresent: Bool
-    @Binding var appLockPrimaryDismissLock: Bool
-    
     @Binding var password: String
     
     @Environment(\.safeAreaInsets) private var safeAreaInsets
@@ -57,13 +54,8 @@ struct SetUpAppLockSecondary: View {
             if isBioLoginAuthPass {
                 Spacer().frame(height: 50)
                 NavigationLink {
-                    VStack {
-                        SetUpAppLockTertiary(
-                         isSetUpAppLockPresent: $isSetUpAppLockPresent,
-                         isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent,
-                         appLockPrimaryDismissLock: $appLockPrimaryDismissLock, password: $password
-                        )
-                    }
+                    SetUpAppLockTertiary(isAppLockEnable: $isAppLockEnable, isAppLockSheetPresent: $isAppLockSheetPresent, password: $password)
+                        .navigationBarBackButtonHidden(true)
                     .navigationBarTitle("SetUpAppLock.Title")
                 } label: {
                     Text("SetUpAppLock.Next")
@@ -74,16 +66,16 @@ struct SetUpAppLockSecondary: View {
             }
             Spacer().frame(height: 60)
             NavigationLink {
-               SetUpAppLockTertiary(
-                isSetUpAppLockPresent: $isSetUpAppLockPresent,
-                isAppLockChangeSheetPresent: $isAppLockChangeSheetPresent,
-                appLockPrimaryDismissLock: $appLockPrimaryDismissLock, password: $password
-               )
-                .navigationBarTitle("SetUpAppLock.Title")
+                SetUpAppLockTertiary(isAppLockEnable: $isAppLockEnable, isAppLockSheetPresent: $isAppLockSheetPresent, password: $password)
+                    .navigationBarBackButtonHidden(true)
+            .navigationBarTitle("SetUpAppLock.Title")
             } label: {
                 Text("SetUpAppLock.Secondary.Escape")
             }
             Spacer()
+        }
+        .onAppear {
+            
         }
     }
     
@@ -107,10 +99,9 @@ struct SetUpAppLockSecondary: View {
 struct SetUpAppLockSecondary_Previews: PreviewProvider {
     static var previews: some View {
         SetUpAppLockSecondary(
+            isAppLockEnable: .constant(false),
+            isAppLockSheetPresent: .constant(true),
             isBioLoginAuthPass: .constant(false),
-            isSetUpAppLockPresent: .constant(false),
-            isAppLockChangeSheetPresent: .constant(false),
-            appLockPrimaryDismissLock: .constant(false),
             password: .constant("")
         )
     }

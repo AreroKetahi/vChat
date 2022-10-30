@@ -66,10 +66,10 @@
 "LockedPage.CanNotUse.Title" = "为什么？";
 
 /* super:LockedPage */
-"LockedPage.CanNotUse.TouchID" = "您的 iPhone 支持触控ID，但您没有在设置中启用它。 或者您的 iPhone是 iPhone 5 或更低版本，所以不支持触控ID。";
+"LockedPage.CanNotUse.TouchID" = "你的 iPhone 支持触控ID，但您没有在设置中启用它。 或你的 iPhone是 iPhone 5 或更低版本，所以不支持触控ID。";
 
 /* super:LockedPage */
-"LockedPage.CanNotUseBio%@" = "为什么我不能用%@？";
+"LockedPage.CanNotUseBio%@" = "为什么我不能使用%@？";
 
 /* super:LockedPage */
 "LockedPage.EnterPassword" = "请输入密码";
@@ -144,10 +144,10 @@
 "SetUpAppLock.Start.ButtonText" = "注册 App Lock";
 
 /* super:SetUpAppLock */
-"SetUpAppLock.Start.Definition.1" = "当您不使用vChat时，App Lock将保护您的应用程序不被他人使用。";
+"SetUpAppLock.Start.Definition.1" = "当不使用vChat时，App Lock将保护您的应用程序不被他人使用。";
 
 /* super:SetUpAppLock */
-"SetUpAppLock.Start.Definition.2" = "当您不使用vChat时，应用程序将会自动锁定以保护您的数据安全。";
+"SetUpAppLock.Start.Definition.2" = "当不使用vChat时，应用程序将会自动锁定以保护您的数据安全。";
 
 /* super:SetUpAppLock */
 "SetUpAppLock.Start.Title" = "开始使用App Lock";
@@ -172,3 +172,5 @@
 
 /* super:SetUpAppLock */
 "SetupAppLock.Secondary.Title" = "第二步";
+
+"SetupAppLock.SkipBioNote%@" = "将会跳过%@设置。";

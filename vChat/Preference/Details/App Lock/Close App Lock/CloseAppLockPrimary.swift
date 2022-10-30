@@ -8,29 +8,28 @@
 import SwiftUI
 
 struct CloseAppLockPrimary: View {
-    @Binding var isAppLockChangePasswordBoxPresent: Bool
+//    @Binding var isAppLockChangePasswordBoxPresent: Bool
     @Binding var isAppLockEnable: Bool
-    @Binding var appLockToogleLock: Bool
+//    @Binding var appLockToogleLock: Bool
+//    @Binding var isAppLockChangeSheetPresent: Bool
+    @Binding var isAppLockSheetPresent: Bool
+    @Binding var isCloseAppLockSecPresent: Bool
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 Button {
-                    didAppLockChangeSheetDissmiss()
+                    isAppLockSheetPresent = false
                 } label: {
-                    VStack {
-                        Spacer().frame(height: 10)
-                        HStack {
-                            Spacer().frame(width: 10)
-                            Text("SetUpAppLock.Cancel")
-                                .foregroundColor(.white)
-                            Spacer().frame(width: 10)
+                    Circle()
+                        .foregroundColor(Color("LightGray"))
+                        .frame(width: 40)
+                        .overlay {
+                            Image(systemName: "xmark")
+                                .foregroundColor(.gray)
                         }
-                        Spacer().frame(height: 10)
-                    }
-                    .background(RoundedRectangle(cornerRadius: 10, style: .continuous).foregroundColor(.blue))
-                    .padding()
-                }
+                        .padding()
+                } // Close Button
             }
             Text("CloseAppLock.Primary.Title")
                 .font(.system(size: 30, weight: .semibold, design: .rounded))
@@ -45,7 +44,7 @@ struct CloseAppLockPrimary: View {
                 .font(.headline)
                 .padding()
             Button {
-                isAppLockChangePasswordBoxPresent = true
+                isCloseAppLockSecPresent = true
             } label: {
                 HStack {
                     Image(systemName: "lock.slash")
@@ -57,18 +56,22 @@ struct CloseAppLockPrimary: View {
             }
             Spacer()
         }
-    }
-    
-    private func didAppLockChangeSheetDissmiss() {
-        isAppLockEnable.toggle()
-        DispatchQueue.main.async {
-            appLockToogleLock = false
+        .sheet(isPresented: $isCloseAppLockSecPresent) {
+           CloseAppLockSecondary(
+            isAppLockEnable: $isAppLockEnable,
+            isAppLockSheetPresent: $isAppLockSheetPresent,
+            isCloseAppLockSecPresent: $isCloseAppLockSecPresent
+           )
         }
     }
 }
 
 struct CloseAppLockPrimary_Previews: PreviewProvider {
     static var previews: some View {
-        CloseAppLockPrimary(isAppLockChangePasswordBoxPresent: .constant(false), isAppLockEnable: .constant(false), appLockToogleLock: .constant(true))
+        CloseAppLockPrimary(
+            isAppLockEnable: .constant(false),
+            isAppLockSheetPresent: .constant(true),
+            isCloseAppLockSecPresent: .constant(false)
+        )
     }
 }

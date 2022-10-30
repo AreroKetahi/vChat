@@ -172,3 +172,5 @@
 
 /* super:SetUpAppLock */
 "SetupAppLock.Secondary.Title" = "Second Step";
+
+"SetupAppLock.SkipBioNote%@" = "Will skip setting %@.";

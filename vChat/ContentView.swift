@@ -9,20 +9,25 @@ import SwiftUI
 import LocalAuthentication
 
 struct ContentView: View {
-    @Binding var appState: AppState
+    var appState: AppState
     @Binding var isAppLocked: Bool
     @Binding var isAppLockEnable: Bool
     @Binding var isAppReloadEnable: Bool
     var body: some View {
         VStack {
-            if isAppLocked && isAppLockEnable {
-                LockedPage(isAppLocked: $isAppLocked)
-            } else {
-                EntryPoint(
-                    isAppLocked: $isAppLocked,
-                    isAppLockEnable: $isAppLockEnable
-                )
-                    .environmentObject(VCEnvironmentObjects())
+            switch appState {
+                case .content:
+                    EntryPoint(
+                        isAppLocked: $isAppLocked,
+                        isAppLockEnable: $isAppLockEnable
+                    )
+                        .environmentObject(VCEnvironmentObjects())
+                case .lock:
+                    LockedPage(isAppLocked: $isAppLocked)
+                case .signUp:
+                    VStack {
+                        
+                    }
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.didEnterBackgroundNotification)) { _ in
@@ -38,7 +43,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(
-            appState: .constant(.lock),
+            appState: .lock,
             isAppLocked: .constant(true),
             isAppLockEnable: .constant(true),
             isAppReloadEnable: .constant(false)

@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import LocalAuthentication
 import SwiftUI
+import CryptoSwift
 
 
 /// A function that can get application language's identifer
@@ -75,4 +76,10 @@ func hexString(_ iterator:Array<UInt8>.Iterator) -> String{
 
 func emptyAction() {
     
+}
+
+func isEmailString(_ email: String) -> Bool {
+    let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+    let emailTest:NSPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+    return emailTest.evaluate(with: email)
 }

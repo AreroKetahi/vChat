@@ -86,3 +86,20 @@ extension String {
         return digest.reduce("") { $0 + String(format:"%02x", $1) }.uppercased()
     }
 }
+
+// String Base64 Encode
+extension String {
+    //Base64编码
+    func encodBase64() -> String? {
+        let strData = self.data(using: String.Encoding.utf8)
+        let base64String = strData?.base64EncodedString(options: NSData.Base64EncodingOptions.init(rawValue: 0))
+        return base64String
+    }
+    
+    //Base64解码
+    func decodeBase64() -> String? {
+        let decodedData = NSData(base64Encoded: self, options: NSData.Base64DecodingOptions.init(rawValue: 0))
+        let decodedString = NSString(data: decodedData! as Data, encoding: String.Encoding.utf8.rawValue) as String?
+        return decodedString
+    }
+}

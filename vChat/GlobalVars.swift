@@ -25,3 +25,7 @@ final class StoragedVars: ObservableObject {
     @Published var isAppLockEnable: Bool = true
     @Published var localPassword: String = "B7AB30A912521AC36E433A5CFC8B5C1037884487AF45AE5311CED235EE77FAEF"
 }
+
+let domainsArray = FileManager.default.urls(for:.documentDirectory, in: .userDomainMask)
+let domainsPath = domainsArray[0] as URL
+let homePath = NSHomeDirectory()
